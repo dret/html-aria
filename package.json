@@ -1,0 +1,11 @@
+{
+    "name": "C:\users\steven\Documents\GitHub\webspecs\html-aria",
+    "version": "0.0.1",
+    "description": "ARIA in HTML",
+    "scripts": {
+        "test": "node ./node_modules/webspec/bin/webspec.js check --tap"
+    },
+    "devDependencies": {
+        "webspec":      "*"
+    }
+}
