@@ -3,7 +3,7 @@
 <pre class='metadata'>
 Shortname: html-aria
 Group: WebSpecs
-Abstract: This specification is plain and simple wicked sweet. It sings the best of opera.
+Abstract: This specification is plain and simple wicked sweet. It sings the best of opera and gets autopublished.
 </pre>
 
 
