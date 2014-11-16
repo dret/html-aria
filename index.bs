@@ -7,10 +7,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 </pre>
 
 
-  
-
-  <p class="auth">Authors may use the ARIA <code data-x="attr-aria-role">role</code> and <code
-  data-x="attr-aria-*">aria-*</code> attributes on <span>HTML elements</span>, in accordance with the
+  <p class="auth">Authors may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <span>HTML elements</span>, in accordance with the
   requirements described in the ARIA specifications, except where these conflict with the
   <span>strong native semantics</span> or are equal to the <span>default implicit ARIA semantics</span>
   described below. These exceptions are intended to prevent authors from making
@@ -24,31 +21,13 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
   set the ARIA <code data-x="attr-aria-role">role</code> and <code
   data-x="attr-aria-*">aria-*</code> attributes to values that match the <span>default implicit ARIA
   semantics</span> defined in the following two tables.</p>
-<!--START w3c-html--><!--END FORK--><!--bug 11557-->
 
-  <div class="impl">
-
-  <p>User agents must implement ARIA semantics on all <span>HTML elements</span>, as defined in the
-  ARIA specifications. The <span>default implicit ARIA semantics</span> defined below must be
-  recognised by implementations for the purposes of ARIA processing. <a
-  href="#refsARIAIMPL">[ARIAIMPL]</a></p>
-
-  <p class="note">The ARIA attributes defined in the ARIA specifications, and the <span>strong
-  native semantics</span> and <span>default implicit ARIA semantics</span> defined below, do not
-  have any effect on CSS pseudo-class matching, user interface modalities that don't use assistive
-  technologies, or the default actions of user interaction events as described in this
-  specification.</p> <!-- this is a truism, in that there are no requirements that require that
-  those attributes have such an effect, and no requirements that relax the requirements on those
-  effects such that they could be affected by those attributes -->
-
-  </div>
-
-  <!--START FORK-->
-  <h5>ARIA Role Attribute</h5>
+  
+  <h2>ARIA Role Attribute</h2>
 
   <p>Any HTML element, other than elements having <a
   href="#sec-strong-native-semantics">Strong Native Semantics</a> 
-  of <span data-x="concept-role-none">No role</span>, may have an ARIA <code data-x="attr-aria-role">role</code> attribute specified. 
+  of <span>No role</span>, may have an ARIA <code>role</code> attribute specified. 
   This is an ARIA Role attribute as defined by <a href="#refsARIA">[ARIA]</a> 
   <a href="http://www.w3.org/TR/wai-aria/roles#role_definitions">Section
   5.4 Definition of Roles</a>.</p>
@@ -57,16 +36,9 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
   each token must be a non-abstract role defined in the WAI-ARIA specification 
   <a href="#refsARIA">[ARIA]</a>.</p>
 
-  <div class="impl">
+  
 
-  <p>The WAI-ARIA role that an HTML element has assigned to it is the
-  first non-abstract role found in the list of values generated when the
-  <code data-x="attr-aria-role">role</code> attribute is split on
-  spaces.</p>
-
-  </div>
-
-  <h5>State and Property Attributes</h5>
+  <h2>State and Property Attributes</h2>
 
   <p>Every HTML element may have ARIA state and property attributes
   specified. These attributes are defined by <a
@@ -97,14 +69,9 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
   well as <a href="#refsARIA">[ARIA]</a> and <a
   href="#refsARIAIMPL">[ARIAIMPL]</a>.</p>
 
- <!-- needs work <p class="note">Although many elements are omitted from the following tables and therefore do not have 
- any normative constraints on which ARIA roles, states and properties may be applied, they may have <em>meaning</em> 
- and this meaning may be represented in roles, states and properties not provided by <abbr title="Accessible Rich Internet Applications">ARIA</abbr>, but present in <a href="http://www.w3.org/TR/html-aapi/#introduction-accessibility-apis">accessibility APIs</a>. It is therefore recommended that authors consider first using a <code>role</code> attribute on semantically neutral 
- element such as a <code>div</code> or <code>span</code>. </p> -->
   
-  <h5 id="sec-strong-native-semantics">Strong Native Semantics</h5>
+  <h2>Strong Native Semantics</h2>
   
-  <!--END FORK-->
 
   <p>The following table defines the <span>strong native semantics</span> and corresponding
   <span>default implicit ARIA semantics</span> that apply to <span>HTML elements</span>. Each
@@ -113,7 +80,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
   class="impl">When multiple rows apply to an element, the role from the last row to define a role
   must be applied, and the states and properties from all the rows must be combined.</span></p>
 
-  <!--START FORK-->
+
   <p class="auth">Documents must not use any <code data-x="attr-aria-role">role</code> values with elements 
   in the following table other than the corresponding role value (if any) as listed for that element in the second column, 
   or the <code data-x="attr-aria-role">role</code> value "<code>presentation</code>", if the second column indicates that element's 
@@ -139,122 +106,114 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 
      <td><code>area</code> element that creates a <span>hyperlink</span>
      
-     <td><code title="">link</code> role
+     <td><code>link</code> role
 
     <tr>
 
      <td><code>base</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
 
      <td><code>datalist</code> element
 
-     <td><code title="">listbox</code> role, with the <code title="">aria-multiselectable</code> property set to "false"
+     <td><code>listbox</code> role, with the <code>aria-multiselectable</code> property set to "false"
 
     <tr>
 
      <td><code>details</code> element
 
-     <td><code title="">aria-expanded</code> state set to "true" if the element's <code data-x="attr-details-open">open</code> attribute is present, and set to "false" otherwise
+     <td><code>aria-expanded</code> state set to "true" if the element's <code data-x="attr-details-open">open</code> attribute is present, and set to "false" otherwise
 
     <tr>
      <td><code>dialog</code> element without an <code data-x="attr-dialog-open">open</code> attribute
-     <td>The <code title="">aria-hidden</code> state set to "true"
-      <!--START FORK-->
+     <td>The <code>aria-hidden</code> state set to "true"
      <tr>
      <td><code>fieldset</code> element
-     <td><code title="">group</code> role
-     (semantics may be removed by using the <code title="">presentation</code> role)
+     <td><code>group</code> role
+     (semantics may be removed by using the <code>presentation</code> role)
      
      <tr>
      <td><code>footer</code> element that is not a descendant of an <code>article</code> or <code>section</code> element.
-     <td><code title="">contentinfo</code> role
-     (semantics may be removed by using the <code title="">presentation</code> role)
+     <td><code>contentinfo</code> role
+     (semantics may be removed by using the <code>presentation</code> role)
 
-   <!--FORK remove duplicate fieldset SF-->
+
 
     <tr>
 
      <td><code>head</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
-     <!--END FORK-->
+     <td><span>No role</span>
+  
      <tr>
      
      <td><code>header</code> element that is not a descendant of an <code>article</code> or <code>section</code> element.
      
-     <td><code title="">banner</code> role
-     (semantics may be removed by using the <code title="">presentation</code> role)
+     <td><code>banner</code> role
+     (semantics may be removed by using the <code>presentation</code> role)
 
     <tr>
 
      <td><code>hr</code> element
 
-     <td><code title="">separator</code> role
-     (semantics may be removed by using the <code title="">presentation</code> role) 
+     <td><code>separator</code> role
+     (semantics may be removed by using the <code>presentation</code> role) 
 
     <tr>
 
      <td><code>html</code> element
-     <td><span data-x="concept-role-none">No role</span>
-<!-- FORK START see bug https://www.w3.org/Bugs/Public/show_bug.cgi?id=21579 and https://www.w3.org/Bugs/Public/show_bug.cgi?id=26149 SF-->
+     <td><span>No role</span>
     <tr>
      <td><code>img</code> element whose <code data-x="attr-img-alt">alt</code> attribute's value is empty
-     <td><span data-x="concept-role-none">No role</span>. User Agents must identify the <code>img</code> as 
+     <td><span>No role</span>. User Agents must identify the <code>img</code> as 
      ignored or omit it from the accessibility tree.
     <tr>
      <td><code>img</code> element whose <code data-x="attr-img-alt">alt</code> attribute's value is empty and whose <code
   data-x="attr-hyperlink-usemap">usemap</code> attribute has a <span>valid
   hash-name reference</span> to a <code>map</code> element.
-     <td><code title="">img</code> role
- <!-- FORK END -->   
+     <td><code>img</code> role
 	<tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-checkbox">Checkbox</span> state
-     <td><code title="">aria-checked</code> state set to "mixed" if the element's <code data-x="dom-input-indeterminate">indeterminate</code> IDL attribute is true, or "true" if the element's <span data-x="concept-fe-checked">checkedness</span> is true, or "false" otherwise
+     <td><code>aria-checked</code> state set to "mixed" if the element's <code data-x="dom-input-indeterminate">indeterminate</code> IDL attribute is true, or "true" if the element's <span data-x="concept-fe-checked">checkedness</span> is true, or "false" otherwise
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-color">Color</span> state
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-date">Date</span> state
-     <td><span data-x="concept-role-none">No role</span>, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><span>No role</span>, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-datetime">Date and Time</span> state
-     <td><span data-x="concept-role-none">No role</span>, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><span>No role</span>, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
-    <!--END w3c-html-->
-    <tr>
-     <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-datetime-local">Local Date and Time</span> state
-     <td><span data-x="concept-role-none">No role</span>, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
-    <!--START w3c-html-->
-    
+
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-email">E-mail</span> state with no <span data-x="concept-input-list">suggestions source element</span>
-     <td><code title="">textbox</code> role, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><code>textbox</code> role, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-file">File Upload</span> state
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-hidden">Hidden</span> state
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-month">Month</span> state
-     <td><span data-x="concept-role-none">No role</span>, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><span>No role</span>, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-number">Number</span> state
-     <td><code title="">spinbutton</code> role, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute, the <code title="">aria-valuemax</code> property set to the element's <span data-x="concept-input-max">maximum</span>, the <code title="">aria-valuemin</code> property set to the element's <span data-x="concept-input-min">minimum</span>, and, if the result of applying the <span>rules for parsing floating-point number values</span> to the element's <span data-x="concept-fe-value">value</span> is a number, with the <code title="">aria-valuenow</code> property set to that number
+     <td><code>spinbutton</code> role, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute, the <code>aria-valuemax</code> property set to the element's <span data-x="concept-input-max">maximum</span>, the <code>aria-valuemin</code> property set to the element's <span data-x="concept-input-min">minimum</span>, and, if the result of applying the <span>rules for parsing floating-point number values</span> to the element's <span data-x="concept-fe-value">value</span> is a number, with the <code>aria-valuenow</code> property set to that number
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-password">Password</span> state
-     <td><code title="">textbox</code> role, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><code>textbox</code> role, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
 
@@ -267,97 +226,94 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
      data-x="attr-aria-valuemin">aria-valuemin</code> property set to the element's <span
      data-x="concept-input-min">minimum</span>
 
-     <!-- ARIA doesn't currently support a single element with two slider values, so leave the rest
-     undefined for now -->
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-reset">Reset Button</span> state
-     <td><code title="">button</code> role
+     <td><code>button</code> role
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-search">Search</span> state with no <span data-x="concept-input-list">suggestions source element</span>
-     <td><code title="">textbox</code> role, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><code>textbox</code> role, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-submit">Submit Button</span> state
-     <td><code title="">button</code> role
+     <td><code>button</code> role
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-tel">Telephone</span> state with no <span data-x="concept-input-list">suggestions source element</span>
-     <td><code title="">textbox</code> role, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><code>textbox</code> role, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-text">Text</span> state with no <span data-x="concept-input-list">suggestions source element</span>
-     <td><code title="">textbox</code> role, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><code>textbox</code> role, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-text">Text</span>, <span data-x="attr-input-type-search">Search</span>, <span data-x="attr-input-type-tel">Telephone</span>, <span data-x="attr-input-type-url">URL</span>, or <span data-x="attr-input-type-email">E-mail</span> states with a <span data-x="concept-input-list">suggestions source element</span>
-     <td><code title="">combobox</code> role, with the <code title="">aria-owns</code> property set to the same value as the <code data-x="attr-input-list">list</code> attribute, and the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><code>combobox</code> role, with the <code>aria-owns</code> property set to the same value as the <code data-x="attr-input-list">list</code> attribute, and the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-time">Time</span> state
-     <td><span data-x="concept-role-none">No role</span>, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><span>No role</span>, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-url">URL</span> state with no <span data-x="concept-input-list">suggestions source element</span>
-     <td><code title="">textbox</code> role, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><code>textbox</code> role, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-week">Week</span> state
-     <td><span data-x="concept-role-none">No role</span>, with the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
+     <td><span>No role</span>, with the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-input-readonly">readonly</code> attribute
 
     <tr>
      <td><code>keygen</code> element
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
      <td><code>label</code> element
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
      <td><code>link</code> element that creates a <span>hyperlink</span>
-     <td><code title="">link</code> role
-<!--FORK-->
+     <td><code>link</code> role
     <tr>
      <td><code>main</code> element
-     <td><code title="">main</code> role 
-     (semantics may be removed by using the <code title="">presentation</code> role)
+     <td><code>main</code> role 
+     (semantics may be removed by using the <code>presentation</code> role)
      <tr>
      <td><code>map</code> element
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
      
     <tr>
      <td><code>menu</code> element with a <code data-x="attr-menu-type">type</code> attribute in the <span data-x="popup menu state">popup menu</span> state
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
      <tr>
      <td><code>menuitem</code> element
-     <td><code title="">menuitem</code> role
+     <td><code>menuitem</code> role
 
     <tr>
      <td><code>meta</code> element
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
      <td><code>meter</code> element
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
 
      <td><code>nav</code> element
 
-     <td><code title="">navigation</code> role (semantics may be removed by using the <code title="">presentation</code> role) 
+     <td><code>navigation</code> role (semantics may be removed by using the <code>presentation</code> role) 
 
     <tr>
 
      <td><code>noscript</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
 
      <td><code>optgroup</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
 
@@ -368,9 +324,6 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
      data-x="attr-aria-checked">aria-checked</code> states set to "true" if the element's <span
      data-x="concept-option-selectedness">selectedness</span> is true, and "false" otherwise
 
-     <!-- we set -selected for when the role is option, and -checked for when it's menuitemradio;
-     hopefully having them set when they don't apply is a no-op (the ARIA spec doesn't seem clear
-     about this) -->
 
     <tr>
 
@@ -385,28 +338,28 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 
      <td><code>param</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
      
      <tr>
      <td><code>picture</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
 
      <td><code>progress</code> element
 
-     <td><code title="">progressbar</code> role, with, if the progress bar is determinate, the <code title="">aria-valuemax</code> property set to the maximum value of the progress bar, the <code title="">aria-valuemin</code> property set to zero, and the <code title="">aria-valuenow</code> property set to the current value of the progress bar
+     <td><code>progressbar</code> role, with, if the progress bar is determinate, the <code>aria-valuemax</code> property set to the maximum value of the progress bar, the <code>aria-valuemin</code> property set to zero, and the <code>aria-valuenow</code> property set to the current value of the progress bar
 
     <tr>
 
      <td><code>script</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
      <td><code>select</code> element with a <code data-x="attr-select-multiple">multiple</code> attribute
-     <td><code title="">listbox</code> role, with the <code title="">aria-multiselectable</code> property set to "true"
+     <td><code>listbox</code> role, with the <code>aria-multiselectable</code> property set to "true"
 
     <tr>
 
@@ -433,31 +386,31 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 
      <td><code>source</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
 
      <td><code>style</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
 
     <td><code>template</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
 
     <tr>
 
      <td><code>textarea</code> element
 
-     <td><code title="">textbox</code> role, with the <code title="">aria-multiline</code> property set to "true", and the <code title="">aria-readonly</code> property set to "true" if the element has a <code data-x="attr-textarea-readonly">readonly</code> attribute
+     <td><code>textbox</code> role, with the <code>aria-multiline</code> property set to "true", and the <code>aria-readonly</code> property set to "true" if the element has a <code data-x="attr-textarea-readonly">readonly</code> attribute
      <tr>
     <td><code>th</code> element with a <code>scope</code> attribute set to <code>row</code>
     
     <td><code>rowheader</code> role
     <tr>
-    <td><code>th</code> element with a <code>scope</code> attribute set to <code title="">col</code>
+    <td><code>th</code> element with a <code>scope</code> attribute set to <code>col</code>
     
     <td><code>columnheader</code> role
     <tr>
@@ -469,30 +422,30 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 
      <td><code>title</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
      <tr>
-<!--FORK START see bug https://www.w3.org/Bugs/Public/show_bug.cgi?id=24313 SF-->
+
      <td><code>track</code> element
 
-     <td><span data-x="concept-role-none">No role</span>
-    <!-- FORK END -->
+     <td><span>No role</span>
+ 
 	
 	<tr>
 
      <td>Element that is <span data-x="concept-fe-disabled">disabled</span>
 
-     <td>The <code title="">aria-disabled</code> state set to "true"
+     <td>The <code>aria-disabled</code> state set to "true"
 
     <!-- FORK START/END removed hidden from strong semantics see https://www.w3.org/Bugs/Public/show_bug.cgi?id=18574 SF-->
 
     <tr>
      <td>Element that is a <span>candidate for constraint validation</span> but that does not <span data-x="concept-fv-valid">satisfy its constraints</span>
      
-     <td>The <code title="">aria-invalid</code> state set to "true"
+     <td>The <code>aria-invalid</code> state set to "true"
 
   </table>
 
-  <h5 id="sec-implicit-aria-semantics">Implicit ARIA Semantics</h5>
+  <h2>Implicit ARIA Semantics</h2>
 
   <p>Some <span>HTML elements</span> have native semantics that can be overridden. The following
   table lists these elements and their <span>default implicit ARIA semantics</span>, along with the
@@ -500,8 +453,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
   in the first column implies, unless otherwise overridden, the ARIA semantic (role, state, or
   property) given in the cell in the second column of the same row, but this semantic may be
   overridden under the conditions listed in the cell in the third column of that row.</p>
-<!--FORK-->
-  <table id="table-aria-weak">
+  <table>
 
    <thead>
     <tr>
@@ -517,7 +469,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
     <tr>
 
      <td><code>a</code> element that creates a <span>hyperlink</span>
-     <td><code title="">link</code> role
+     <td><code>link</code> role
      <td>If specified, role must be one of the following: 
 	 <code data-x="index-aria-link">link</code>, 
 	 <code data-x="index-aria-button">button</code>, 
@@ -525,212 +477,212 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	 <code data-x="index-aria-menuitem">menuitem</code>, 
 	 <code data-x="index-aria-menuitemcheckbox">menuitemcheckbox</code>, 
 	 <code data-x="index-aria-menuitemradio">menuitemradio</code>, 
-	 <code title="">option</code>,
-	 <code title="">radio</code>, 
+	 <code>option</code>,
+	 <code>radio</code>, 
 	 <code data-x="index-aria-tab">tab</code>, 
 	 or <code data-x="index-aria-treeitem">treeitem</code>
 
     <tr> 
      <td><code>address</code> element
-     <td><span data-x="concept-role-none">No role</span>
-     <td>If specified, role must be <code title="">contentinfo</code>
+     <td><span>No role</span>
+     <td>If specified, role must be <code>contentinfo</code>
 
     <tr>
 
      <td><code>article</code> element
-     <td><code title="">article</code> role
+     <td><code>article</code> role
      <td>If specified, role must be one of the following: 
-	 <code title="">article</code>, 
-	 <code title="">document</code>, 
-	 <code title="">application</code>, 
-	 or <code title="">main</code>
+	 <code>article</code>, 
+	 <code>document</code>, 
+	 <code>application</code>, 
+	 or <code>main</code>
 
     <tr>
 
      <td><code>aside</code> element
-     <td><code title="">complementary</code> role
+     <td><code>complementary</code> role
      <td>If specified, role must be one of the following: 
-	 <code title="">complementary</code>, 
-     <code title="">note</code>, 
-	 <code title="">search</code> 
-	 or <code title="">presentation</code>
+	 <code>complementary</code>, 
+     <code>note</code>, 
+	 <code>search</code> 
+	 or <code>presentation</code>
 
     <tr>
 
      <td><code>audio</code> element
-     <td><span data-x="concept-role-none">No role</span>
-     <td>If specified, role must be <code title="">application</code>
+     <td><span>No role</span>
+     <td>If specified, role must be <code>application</code>
      
      <tr>
      <td><code>body</code> element
-     <td><code title="">document</code> role
+     <td><code>document</code> role
      <td>If specified, role must be either 
-	 <code title="">document</code> 
-	 or <code title="">application</code>
+	 <code>document</code> 
+	 or <code>application</code>
     
      <tr>
      <td><code>button</code> element
-     <td><code title="">button</code> role
+     <td><code>button</code> role
      <td>If specified, role must be one of the following: 
-	 <code title="">button</code>, 
-	 <code title="">link</code>, 
-     <code title="">menuitem</code>, 
-	 <code title="">menuitemcheckbox</code>, 
-     <code title="">menuitemradio</code> 
-	 or <code title="">radio</code>
+	 <code>button</code>, 
+	 <code>link</code>, 
+     <code>menuitem</code>, 
+	 <code>menuitemcheckbox</code>, 
+     <code>menuitemradio</code> 
+	 or <code>radio</code>
 
     <tr>
 
      <td><code>details</code> element
-     <td><code title="">group</code> role
-     <td>If specified, role must be a role that supports <code title="">aria-expanded</code>
+     <td><code>group</code> role
+     <td>If specified, role must be a role that supports <code>aria-expanded</code>
 
     <tr>
 
      <td><code>dialog</code> element
-     <td><code title="">dialog</code> role
+     <td><code>dialog</code> role
      <td>If specified, role must be one of the following:
-      <code title="">alert</code>,
-      <code title="">alertdialog</code>,
-      <code title="">application</code>,
-      <code title="">contentinfo</code>,
-      <code title="">dialog</code>,
-      <code title="">document</code>,
-      <code title="">log</code>,
-      <code title="">main</code>,
-      <code title="">marquee</code>,
-      <code title="">region</code>,
-      <code title="">search</code>, or
-      <code title="">status</code>
+      <code>alert</code>,
+      <code>alertdialog</code>,
+      <code>application</code>,
+      <code>contentinfo</code>,
+      <code>dialog</code>,
+      <code>document</code>,
+      <code>log</code>,
+      <code>main</code>,
+      <code>marquee</code>,
+      <code>region</code>,
+      <code>search</code>, or
+      <code>status</code>
 
     <tr>
 
      <td><code>embed</code> element
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">application</code>, 
-     <code title="">document</code>, 
-	 <code title="">img</code> 
-	 or <code title="">presentation</code>
+	 <code>application</code>, 
+     <code>document</code>, 
+	 <code>img</code> 
+	 or <code>presentation</code>
 
     <tr>
      <td><code>h1</code> element
-     <td><code title="">heading</code> role, with the 
-     <code title="">aria-level</code> property set to the element's <span>outline depth</span>
+     <td><code>heading</code> role, with the 
+     <code>aria-level</code> property set to the element's <span>outline depth</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">heading</code>, 
-	 <code title="">tab</code>
-     or <code title="">presentation</code>
+	 <code>heading</code>, 
+	 <code>tab</code>
+     or <code>presentation</code>
 
     <tr>
      <td><code>h2</code> element
-     <td><code title="">heading</code> role, with the <code title="">aria-level</code> 
+     <td><code>heading</code> role, with the <code>aria-level</code> 
      property set to the element's <span>outline depth</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">heading</code>, 
-	 <code title="">tab</code>
-     or <code title="">presentation</code>
+	 <code>heading</code>, 
+	 <code>tab</code>
+     or <code>presentation</code>
 
     <tr>
      <td><code>h3</code> element
-     <td><code title="">heading</code> role, with the <code title="">aria-level</code> 
+     <td><code>heading</code> role, with the <code>aria-level</code> 
      property set to the element's <span>outline depth</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">heading</code>, 
-	 <code title="">tab</code>
-     or <code title="">presentation</code>
+	 <code>heading</code>, 
+	 <code>tab</code>
+     or <code>presentation</code>
 
     <tr>
      <td><code>h4</code> element
-     <td><code title="">heading</code> role, with the <code title="">aria-level</code> 
+     <td><code>heading</code> role, with the <code>aria-level</code> 
      property set to the element's <span>outline depth</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">heading</code>, 
-	 <code title="">tab</code> 
-	 or <code title="">presentation</code>
+	 <code>heading</code>, 
+	 <code>tab</code> 
+	 or <code>presentation</code>
 
     <tr>
      <td><code>h5</code> element
-     <td><code title="">heading</code> role, with the <code title="">aria-level</code> 
+     <td><code>heading</code> role, with the <code>aria-level</code> 
      property set to the element's <span>outline depth</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">heading</code>, 
-	 <code title="">tab</code>
-     or <code title="">presentation</code>
+	 <code>heading</code>, 
+	 <code>tab</code>
+     or <code>presentation</code>
 
     <tr>
      <td><code>h6</code> element
-     <td><code title="">heading</code> role, with the <code title="">aria-level</code> property set to the element's <span>outline depth</span>
+     <td><code>heading</code> role, with the <code>aria-level</code> property set to the element's <span>outline depth</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">heading</code>, 
-	 <code title="">tab</code>
-     or <code title="">presentation</code>
+	 <code>heading</code>, 
+	 <code>tab</code>
+     or <code>presentation</code>
 
     <tr>
 
      <td><code>iframe</code> element
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">application</code>, 
-	 <code title="">document</code>, 
-	 <code title="">img</code>, 
-	 or <code title="">presentation</code>
+	 <code>application</code>, 
+	 <code>document</code>, 
+	 <code>img</code>, 
+	 or <code>presentation</code>
 
     <tr>
      <td><code>img</code> element whose <code data-x="attr-img-alt">alt</code> attribute's value is absent
-     <td><code title="">img</code> role
+     <td><code>img</code> role
      <td>No restrictions
 
     <tr>
      <td><code>img</code> element whose <code data-x="attr-img-alt">alt</code> attribute's value is present and not empty
-     <td><code title="">img</code> role
+     <td><code>img</code> role
      <td>No restrictions
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-button">Button</span> state
-     <td><code title="">button</code> role
+     <td><code>button</code> role
      <td>If specified, role must be one of the following: 
-	 <code title="">button</code>, 
-	 <code title="">link</code>, 
-     <code title="">menuitem</code>, 
-	 <code title="">menuitemcheckbox</code>, 
-     <code title="">menuitemradio</code> 
-	 or <code title="">radio</code>
+	 <code>button</code>, 
+	 <code>link</code>, 
+     <code>menuitem</code>, 
+	 <code>menuitemcheckbox</code>, 
+     <code>menuitemradio</code> 
+	 or <code>radio</code>
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-checkbox">Checkbox</span> state
-     <td><code title="">checkbox</code> role
+     <td><code>checkbox</code> role
      <td>If specified, role must be either 
-	 <code title="">checkbox</code> 
-	 or <code title="">menuitemcheckbox</code>
+	 <code>checkbox</code> 
+	 or <code>menuitemcheckbox</code>
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-image">Image Button</span> state
-     <td><code title="">button</code> role
+     <td><code>button</code> role
      <td>If specified, role must be one of the following: 
-	 <code title="">button</code>, 
-	 <code title="">link</code>, 
-     <code title="">menuitem</code>, 
-	 <code title="">menuitemcheckbox</code>, 
-     <code title="">menuitemradio</code> 
-	 or <code title="">radio</code>
+	 <code>button</code>, 
+	 <code>link</code>, 
+     <code>menuitem</code>, 
+	 <code>menuitemcheckbox</code>, 
+     <code>menuitemradio</code> 
+	 or <code>radio</code>
 
     <tr>
      <td><code>input</code> element with a <code data-x="attr-input-type">type</code> attribute in the <span data-x="attr-input-type-radio">Radio Button</span> state
-     <td><code title="">radio</code> role
+     <td><code>radio</code> role
      <td>If specified, role must be either 
-	 <code title="">radio</code> 
-	 or <code title="">menuitemradio</code>
+	 <code>radio</code> 
+	 or <code>menuitemradio</code>
      
      <tr>
      <td><code>input</code>, <code>select</code> or <code>textarea</code> element with a <code>required</code> attribute
-     <td>The <code title="">aria-required</code> state set to "true"
-     <td>If specified, the <code title="">aria-required</code> state must be set to "true"
+     <td>The <code>aria-required</code> state set to "true"
+     <td>If specified, the <code>aria-required</code> state must be set to "true"
 
      <tr>
      <td><code>input</code>, <code>select</code> or <code>textarea</code> element without a <code>required</code> attribute
-     <td><code title="">aria-required</code> set to "false"
-     <td>If specified, the <code title="">aria-required</code> state set to "true" or "false"
+     <td><code>aria-required</code> set to "false"
+     <td>If specified, the <code>aria-required</code> state set to "true" or "false"
 
     <tr>
      <td><code>li</code> element whose parent is an <code>ol</code> or <code>ul</code> element
@@ -752,26 +704,26 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 
     <tr>
      <td><code>menu</code> element with a <code data-x="attr-menu-type">type</code> attribute in the <span data-x="toolbar state">toolbar</span> state
-     <td><code title="">toolbar</code> role
+     <td><code>toolbar</code> role
      <td>If specified, role must be one of the following: 
-	 <code title="">directory</code>, 
-	 <code title="">list</code>, 
-	 <code title="">listbox</code>, 
-	 <code title="">menu</code>, 
-	 <code title="">menubar</code>, 
-	 <code title="">tablist</code>, 
-	 <code title="">toolbar</code>, or 
-	 <code title="">tree</code>
+	 <code>directory</code>, 
+	 <code>list</code>, 
+	 <code>listbox</code>, 
+	 <code>menu</code>, 
+	 <code>menubar</code>, 
+	 <code>tablist</code>, 
+	 <code>toolbar</code>, or 
+	 <code>tree</code>
 
     <tr>
 
      <td><code>object</code> element
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
      <td>If specified, role must be one of the following: 
-	 <code title="">application</code>, 
-	 <code title="">document</code>, 
-	 <code title="">img</code>, 
-	 or <code title="">presentation</code>
+	 <code>application</code>, 
+	 <code>document</code>, 
+	 <code>img</code>, 
+	 or <code>presentation</code>
 
     <tr>
 
@@ -790,9 +742,8 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
       <code data-x="attr-aria-role-tablist">tablist</code>,
       <code data-x="attr-aria-role-toolbar">toolbar</code>,
       <code data-x="attr-aria-role-tree">tree</code>,
-      <!-- FORK -->
       or <code data-x="attr-aria-role-presentation">presentation</code>
-      <!-- FORK END -->
+
 
     <tr>
 
@@ -812,29 +763,29 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
     <tr>
 
      <td><code>output</code> element
-     <td><code title="">status</code> role <p class="note"><a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26135">bug 26135</a> - is role=status correct for output element?</p> 
+     <td><code>status</code> role <p class="note"><a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26135">bug 26135</a> - is role=status correct for output element?</p> 
      <td>No restrictions
 
     <tr>
 
      <td><code>section</code> element
-     <td><code title="">region</code> role <p class="note">It is strongly recommended that user agents such as screen readers 
+     <td><code>region</code> role <p class="note">It is strongly recommended that user agents such as screen readers 
         only convey the presence of, and provide navigation for <code>section</code> elements, when the <code>section</code> element has 
         an accessible name.</p>
      <td>If specified, role must be one of the following:
-      <code title="">alert</code>,
-      <code title="">alertdialog</code>,
-      <code title="">application</code>,
-      <code title="">contentinfo</code>,
-      <code title="">dialog</code>,
-      <code title="">document</code>,
-      <code title="">log</code>,
-      <code title="">main</code>,
-      <code title="">marquee</code>,
-      <code title="">region</code>,
-      <code title="">search</code>, 
-      <code title="">status</code>
-      or <code title="">presentation</code>
+      <code>alert</code>,
+      <code>alertdialog</code>,
+      <code>application</code>,
+      <code>contentinfo</code>,
+      <code>dialog</code>,
+      <code>document</code>,
+      <code>log</code>,
+      <code>main</code>,
+      <code>marquee</code>,
+      <code>region</code>,
+      <code>search</code>, 
+      <code>status</code>
+      or <code>presentation</code>
 
      <!-- FORK removing duplicate cells added in whatwg cherry pick https://github.com/w3c/html/commit/368094b2a8d8440fcad29d5bef651baf3c0693d1 -->
     
@@ -853,9 +804,9 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 
      <td><code>summary</code> element with no <span>Interactive content</span> descendant
 
-     <td><span data-x="concept-role-none">No role</span>
+     <td><span>No role</span>
      
-     <td>If specified, role must be <code title="">button</code>
+     <td>If specified, role must be <code>button</code>
     
     <tr>
 
@@ -881,49 +832,29 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
     <tr>
 
      <td><code>video</code> element
-     <td><span data-x="concept-role-none">No role</span>
-     <td>If specified, role must be <code title="">application</code>
+     <td><span>No role</span>
+     <td>If specified, role must be <code>application</code>
       <tr>
      <td>Element with a <code data-x="attr-hidden">hidden</code> attribute
-     <td>The <code title="">aria-hidden</code> state set to "true"
-     <td>If specified, the <code title="">aria-hidden</code> state set to "true" or "false"
+     <td>The <code>aria-hidden</code> state set to "true"
+     <td>If specified, the <code>aria-hidden</code> state set to "true" or "false"
      <tr>
      <td>Element without a <code data-x="attr-hidden">hidden</code> attribute
-     <td>The <code title="">aria-hidden</code> state set to "false"
-     <td>If specified, the <code title="">aria-hidden</code> state set to "true" or "false" 
+     <td>The <code>aria-hidden</code> state set to "false"
+     <td>If specified, the <code>aria-hidden</code> state set to "true" or "false" 
   </table>
 
   <!--START FORK-->
-  <p>The entry "<dfn data-x="concept-role-none">no role</dfn>", when used as a <span data-x="strong
+  <p>The entry "<dfn>no role</dfn>", when used as a <span data-x="strong
   native semantics">strong native semantic</span>, means that no role can be used and that the
   user agent has no default mapping to ARIA roles. (However, it could have its own mappings to the
   accessibility layer.) When used as a <span data-x="default implicit ARIA semantics">default
   implicit ARIA semantic</span>, it means the user agent has no default mapping to ARIA roles.
   (However, it could have its own mappings to the accessibility layer.)</p>
    
-  <!--END FORK-->
 
-  <div class="impl">
 
-<!--END dev-html--><!--END complete--><!--START FORK-->
-  <p>The WAI-ARIA specification neither requires or forbids user
-  agents from enhancing native presentation and interaction behaviors
-  on the basis of WAI- ARIA markup. Even mainstream user agents might
-  choose to expose metadata or navigational features directly or via
-  user-installed extensions; for example, exposing required form
-  fields or landmark navigation. User agents are encouraged to
-  maximize their usefulness to users, including users without
-  disabilities.</p>
-<!--START dev-html--><!--START complete--><!-- EDITORIAL --><!--END FORK-->
-
-  <p>Conformance checkers are encouraged to phrase errors such that authors are encouraged to use
-  more appropriate elements rather than remove accessibility annotations. For example, if an
-  <code>a</code> element is marked as having the <code title="">button</code>
-  role, a conformance checker could say "Use a more appropriate element to represent a button, for
-  example a <code>button</code> element or an <code>input</code> element" rather than "The <code
-  title="">button</code> role cannot be used with <code>a</code> elements".</p>
-
-  </div>
+  
   <div class="note">
     <p>Authors are encouraged to make use of the following documents for guidance on using ARIA in
     HTML beyond that which is provided in this section:</p>
@@ -972,7 +903,6 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 
   </div>
 
-<!-- FORK start see bug 21898 SF-->
 <div class="author">
 <h5>Allowed ARIA roles, states and properties</h5>
 <p><em>This section is non-normative.</em></p>
@@ -1011,13 +941,13 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-relevant">aria-relevant</a></code></li>
 </ul>
 <tr><td tabindex="-1" id="index-aria-alert"><code><a href="http://www.w3.org/TR/wai-aria/roles#alert">alert</a></code></td>
-<td>A message with important, and usually time-sensitive, information. See related <code title="">alertdialog</code> and <code title="">status</code>.</td>
+<td>A message with important, and usually time-sensitive, information. See related <code>alertdialog</code> and <code>status</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-alertdialog"><code><a href="http://www.w3.org/TR/wai-aria/roles#alertdialog">alertdialog</a></code></td>
-<td>A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related <code title="">alert</code> and <code title="">dialog</code>.</td>
+<td>A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related <code>alert</code> and <code>dialog</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1041,7 +971,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-button"><code><a href="http://www.w3.org/TR/wai-aria/roles#button">button</a></code></td>
-<td>An input that allows for user-triggered actions when clicked or pressed. See related <code title="">link</code>.</td>
+<td>An input that allows for user-triggered actions when clicked or pressed. See related <code>link</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1064,7 +994,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-combobox"><code><a href="http://www.w3.org/TR/wai-aria/roles#combobox">combobox</a></code></td>
-<td>A presentation of a select; usually similar to a textbox where users can type ahead to select an option, or type to enter arbitrary text as a new item in the list. See related <code title="">listbox</code>.</td>
+<td>A presentation of a select; usually similar to a textbox where users can type ahead to select an option, or type to enter arbitrary text as a new item in the list. See related <code>listbox</code>.</td>
 <td><ul>
  <li><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded"><code>aria-expanded (state)</code></a></li>
 </ul></td>
@@ -1092,7 +1022,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-dialog"><code><a href="http://www.w3.org/TR/wai-aria/roles#dialog">dialog</a></code></td>
-<td>A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response. See related <code title="">alertdialog</code>.</td>
+<td>A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response. See related <code>alertdialog</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1110,7 +1040,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-form"><code><a href="http://www.w3.org/TR/wai-aria/roles#form">form</a></code></td>
-<td>A landmark region that contains a collection of items and objects that, as a whole, combine to create a form. See related <code title="">search</code>.</td>
+<td>A landmark region that contains a collection of items and objects that, as a whole, combine to create a form. See related <code>search</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1155,19 +1085,19 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-link"><code><a href="http://www.w3.org/TR/wai-aria/roles#link">link</a></code></td>
-<td>An interactive reference to an internal or external resource that, when activated, causes the user agent to navigate to that resource. See related <code title="">button</code>.</td>
+<td>An interactive reference to an internal or external resource that, when activated, causes the user agent to navigate to that resource. See related <code>button</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-list"><code><a href="http://www.w3.org/TR/wai-aria/roles#list">list</a></code></td>
-<td>A group of non-interactive list items. See related <code title="">listbox</code>.</td>
+<td>A group of non-interactive list items. See related <code>listbox</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-listbox"><code><a href="http://www.w3.org/TR/wai-aria/roles#listbox">listbox</a></code></td>
-<td>A widget that allows the user to select one or more items from a list of choices. See related <code title="">combobox</code> and <code title="">list</code>.</td>
+<td>A widget that allows the user to select one or more items from a list of choices. See related <code>combobox</code> and <code>list</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-multiselectable">aria-multiselectable</a></code></li>
@@ -1177,7 +1107,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-listitem"><code><a href="http://www.w3.org/TR/wai-aria/roles#listitem">listitem</a></code></td>
-<td>A single item in a <code title="">list</code> or <code title="">directory</code>.</td>
+<td>A single item in a <code>list</code> or <code>directory</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-level">aria-level</a></code></li>
@@ -1186,7 +1116,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-log"><code><a href="http://www.w3.org/TR/wai-aria/roles#log">log</a></code></td>
-<td>A type of live region where new information is added in meaningful order and old information may disappear. See related <code title="">marquee</code>.</td>
+<td>A type of live region where new information is added in meaningful order and old information may disappear. See related <code>marquee</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1198,7 +1128,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-marquee"><code><a href="http://www.w3.org/TR/wai-aria/roles#marquee">marquee</a></code></td>
-<td>A type of live region where non-essential information changes frequently. See related <code title="">log</code>.</td>
+<td>A type of live region where non-essential information changes frequently. See related <code>log</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1226,7 +1156,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-menuitem"><code><a href="http://www.w3.org/TR/wai-aria/roles#menuitem">menuitem</a></code></td>
-<td>An option in a group of choices contained by a <code title="">menu</code> or <code title="">menubar</code>.</td>
+<td>An option in a group of choices contained by a <code>menu</code> or <code>menubar</code>.</td>
 <td>none</td>
 <td><code></code></td></tr>
 <tr><td tabindex="-1" id="index-aria-menuitemcheckbox"><code><a href="http://www.w3.org/TR/wai-aria/roles#menuitemcheckbox">menuitemcheckbox</a></code></td>
@@ -1236,7 +1166,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 </ul></td>
 <td><code></code></td></tr>
 <tr><td tabindex="-1" id="index-aria-menuitemradio"><code><a href="http://www.w3.org/TR/wai-aria/roles#menuitemradio">menuitemradio</a></code></td>
-<td>A checkable menuitem in a group of <code title="">menuitemradio</code> roles, only one of which can be checked at a time.</td>
+<td>A checkable menuitem in a group of <code>menuitemradio</code> roles, only one of which can be checked at a time.</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-checked">aria-checked (state)</a></code></li>
 </ul></td>
@@ -1342,7 +1272,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-search"><code><a href="http://www.w3.org/TR/wai-aria/roles#search">search</a></code></td>
-<td>A landmark region that contains a collection of items and objects that, as a whole, combine to create a search facility. See related <code title="">form</code>.</td>
+<td>A landmark region that contains a collection of items and objects that, as a whole, combine to create a search facility. See related <code>form</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1379,7 +1309,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuetext">aria-valuetext</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-status"><code><a href="http://www.w3.org/TR/wai-aria/roles#status">status</a></code></td>
-<td>A container whose content is advisory information for the user but is not important enough to justify an alert, often but not necessarily presented as a status bar. See related <code title="">alert</code>.</td>
+<td>A container whose content is advisory information for the user but is not important enough to justify an alert, often but not necessarily presented as a status bar. See related <code>alert</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1400,7 +1330,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
 </ul></td></tr>
 <tr><td tabindex="-1" id="index-aria-tabpanel"><code><a href="http://www.w3.org/TR/wai-aria/roles#tabpanel">tabpanel</a></code></td>
-<td>A container for the resources associated with a <code title="">tab</code>, where each <code title="">tab</code> is contained in a <code title="">tablist</code>.</td>
+<td>A container for the resources associated with a <code>tab</code>, where each <code>tab</code> is contained in a <code>tablist</code>.</td>
 <td>none</td>
 <td><ul>
  <li><code><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
@@ -1468,6 +1398,48 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 </tbody>
 </table>
 </div>
-<!-- FORK end see bug 21898 SF-->
+<h3>For Implementers</h3>
+<div class="impl">
 
-   
+  <p>User agents must implement ARIA semantics on all <span>HTML elements</span>, as defined in the
+  ARIA specifications. The <span>default implicit ARIA semantics</span> defined below must be
+  recognised by implementations for the purposes of ARIA processing. <a
+  href="#refsARIAIMPL">[ARIAIMPL]</a></p>
+
+  <p class="note">The ARIA attributes defined in the ARIA specifications, and the <span>strong
+  native semantics</span> and <span>default implicit ARIA semantics</span> defined below, do not
+  have any effect on CSS pseudo-class matching, user interface modalities that don't use assistive
+  technologies, or the default actions of user interaction events as described in this
+  specification.</p> <!-- this is a truism, in that there are no requirements that require that
+  those attributes have such an effect, and no requirements that relax the requirements on those
+  effects such that they could be affected by those attributes -->
+
+  </div>
+
+   <div class="impl">
+
+  <p>The WAI-ARIA role that an HTML element has assigned to it is the
+  first non-abstract role found in the list of values generated when the
+  <code data-x="attr-aria-role">role</code> attribute is split on
+  spaces.</p>
+  <div class="impl">
+  <p>The WAI-ARIA specification neither requires or forbids user
+  agents from enhancing native presentation and interaction behaviors
+  on the basis of WAI- ARIA markup. Even mainstream user agents might
+  choose to expose metadata or navigational features directly or via
+  user-installed extensions; for example, exposing required form
+  fields or landmark navigation. User agents are encouraged to
+  maximize their usefulness to users, including users without
+  disabilities.</p>
+
+
+  <p>Conformance checkers are encouraged to phrase errors such that authors are encouraged to use
+  more appropriate elements rather than remove accessibility annotations. For example, if an
+  <code>a</code> element is marked as having the <code>button</code>
+  role, a conformance checker could say "Use a more appropriate element to represent a button, for
+  example a <code>button</code> element or an <code>input</code> element" rather than "The <code
+ >button</code> role cannot be used with <code>a</code> elements".</p>
+
+  </div>
+
+  </div>
