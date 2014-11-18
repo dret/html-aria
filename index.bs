@@ -23,7 +23,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	  semantics</span> defined in the following two tables.</p>
 	
 	  
-	  <h2>ARIA Role Attribute</h2>
+	  <h2 id="aria-role-attribute">ARIA Role Attribute</h2>
 	
 	  <p>Any HTML element, other than elements having <a
 	  href="#sec-strong-native-semantics">Strong Native Semantics</a> 
@@ -38,7 +38,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	
 	  
 	
-	  <h2>State and Property Attributes</h2>
+	  <h2 id="state-and-property-attributes">State and Property Attributes</h2>
 	
 	  <p>Every HTML element may have ARIA state and property attributes
 	  specified. These attributes are defined by <a
@@ -70,7 +70,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	  href="#refsARIAIMPL">[ARIAIMPL]</a>.</p>
 	
 	  
-	  <h2>Strong Native Semantics</h2>
+	  <h2 id="sec-strong-native-semantics">Strong Native Semantics</h2>
 	  
 	
 	  <p>The following table defines the <span>strong native semantics</span> and corresponding
@@ -489,7 +489,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	
 	  </table>
 	
-	  <h2>Implicit ARIA Semantics</h2>
+	  <h2 id="sec-implicit-aria-semantics">Implicit ARIA Semantics</h2>
 
 	<p>Some <span>HTML elements</span> have native semantics that can be overridden. The following
 	table lists these elements and their <span>default implicit ARIA semantics</span>, along with the
@@ -909,8 +909,8 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
     HTML beyond that which is provided in this section:</p>
 
     <ul>
-      <li><a href="http://rawgithub.com/w3c/aria-in-html/master/index.html">Using WAI-ARIA in HTML</a>
-      - A practical guide for developers on how to to add accessibility information to HTML elements using
+      <li><a href="http://rawgithub.com/w3c/aria-in-html/master/index.html">Using WAI-ARIA in HTML</a> -
+      A practical guide for developers on how to to add accessibility information to HTML elements using
       the Accessible Rich Internet Applications specification <a href="#refsARIA">[ARIA]</a>.
       In particular the
       <a href="http://rawgithub.com/w3c/aria-in-html/master/index.html#recommendations-table">Recommendations Table</a>
@@ -953,7 +953,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	</div>
   
 	<div class="author">
-	<h5>Allowed ARIA roles, states and properties</h5>
+	<h5 id="allowed-aria-roles-states-and-properties">Allowed ARIA roles, states and properties</h5>
 	<p><em>This section is non-normative.</em></p>
 	<p class="note">The following table provides an informative reference to the ARIA roles, states and properties permitted for use in HTML. All ARIA
 	roles, states and properties are normatively defined in the <a href="#refsARIA">[ARIA]</a> specification. Links to ARIA roles, states and properties     in the table reference the normative <a href="#refsARIA">[ARIA]</a> definitions.</p>
@@ -1459,7 +1459,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	</tbody>
 	</table>
 	</div>
-	<h3>For Implementers</h3>
+	<h3 id="for-implementers">For Implementers</h3>
 	<div class="impl">
 	
 	  <p>User agents must implement ARIA semantics on all <span>HTML elements</span>, as defined in the
