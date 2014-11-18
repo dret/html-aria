@@ -453,7 +453,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 		
 		<td><code>columnheader</code> role
 		<tr>
-		<td><code>th</code> element that is a <a>sorting-capable</a> <code>th</code> element whose column key <span 
+		<td><code>th</code> element that is a sorting-capable <code>th</code> element whose column key <span 
 		data-x="column key ordinality">ordinality</span> is 1
 		
 		<td><code>columnheader</code> role, with the <code>aria-sort</code> state set to "ascending" if the element's <span 
