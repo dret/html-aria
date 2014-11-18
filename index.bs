@@ -12,7 +12,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	  <span>strong native semantics</span> or are equal to the <span>default implicit ARIA semantics</span>
 	  described below. These exceptions are intended to prevent authors from making
 	  assistive technology products report nonsensical states that do not represent the actual state of
-	  the document. <a href="#refsARIA">[ARIA]</a></p>
+	  the document. [[ARIA]]</p>
 	
 	  <p class="auth">Authors must not set the ARIA <code data-x="attr-aria-role">role</code> and <code
 	  data-x="attr-aria-*">aria-*</code> attributes in a manner that conflicts with the semantics
@@ -28,33 +28,32 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	  <p>Any HTML element, other than elements having <a
 	  href="#sec-strong-native-semantics">Strong Native Semantics</a> 
 	  of <span>No role</span>, may have an ARIA <code>role</code> attribute specified. 
-	  This is an ARIA Role attribute as defined by <a href="#refsARIA">[ARIA]</a> 
+	  This is an ARIA Role attribute as defined by [[ARIA]] 
 	  <a href="http://www.w3.org/TR/wai-aria/roles#role_definitions">Section
 	  5.4 Definition of Roles</a>.</p>
 	
 	  <p>The attribute, if specified, must have a value that is a set of space-separated tokens; 
 	  each token must be a non-abstract role defined in the WAI-ARIA specification 
-	  <a href="#refsARIA">[ARIA]</a>.</p>
+	  [[ARIA]].</p>
 	
 	  
 	
 	  <h2 id="state-and-property-attributes">State and Property Attributes</h2>
 	
 	  <p>Every HTML element may have ARIA state and property attributes
-	  specified. These attributes are defined by <a
-	  href="#refsARIA">[ARIA]</a> in <a
+	  specified. These attributes are defined by [[ARIA]] in <a
 	  href="http://www.w3.org/TR/wai-aria/states_and_properties#state_prop_def">Section
 	  6.6, Definitions of States and Properties (all aria-*
 	  attributes)</a>.</p>
 	
 	  <p>A subset of the ARIA State and Property attributes are defined as "<dfn id="aria-global-attributes">Global States and Properties</dfn>" in 
 	  <a href="http://www.w3.org/TR/wai-aria/states_and_properties#global_states">Section 6.4. Global States and Properties</a> 
-	  of the <a href="#refsARIA">[ARIA]</a> Specification.</p>
+	  of the [[ARIA]] Specification.</p>
 	
 	  <p>These attributes, if specified, must have a value that is the ARIA
 	  value type in the "Value" field of the definition for the state or
-	  property, mapped to the appropriate HTML value type according to <a
-	  href="#refsARIA">[ARIA]</a> <a
+	  property, mapped to the appropriate HTML value type according to 
+	  [[ARIA]] <a
 	  href="http://www.w3.org/TR/wai-aria/appendices#typemapping">Section
 	  10.2 Mapping WAI-ARIA Value types to languages</a> using the HTML 5
 	  mapping.</p>
@@ -66,8 +65,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	  requirements of the sections <a
 	  href="#sec-strong-native-semantics">Strong Native Semantics</a> and <a
 	  href="#sec-implicit-aria-semantics">Implicit ARIA semantics</a>, as
-	  well as <a href="#refsARIA">[ARIA]</a> and <a
-	  href="#refsARIAIMPL">[ARIAIMPL]</a>.</p>
+	  well as [[ARIA]] and [[ARIAIMPL]].</p>
 	
 	  
 	  <h2 id="sec-strong-native-semantics">Strong Native Semantics</h2>
@@ -911,7 +909,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
     <ul>
       <li><a href="http://rawgithub.com/w3c/aria-in-html/master/index.html">Using WAI-ARIA in HTML</a> -
       A practical guide for developers on how to to add accessibility information to HTML elements using
-      the Accessible Rich Internet Applications specification <a href="#refsARIA">[ARIA]</a>.
+      the Accessible Rich Internet Applications specification [[ARIA]].
       In particular the
       <a href="http://rawgithub.com/w3c/aria-in-html/master/index.html#recommendations-table">Recommendations Table</a>
       provides a complete reference for authors as to which ARIA roles, states and properties
@@ -956,7 +954,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	<h5 id="allowed-aria-roles-states-and-properties">Allowed ARIA roles, states and properties</h5>
 	<p><em>This section is non-normative.</em></p>
 	<p class="note">The following table provides an informative reference to the ARIA roles, states and properties permitted for use in HTML. All ARIA
-	roles, states and properties are normatively defined in the <a href="#refsARIA">[ARIA]</a> specification. Links to ARIA roles, states and properties     in the table reference the normative <a href="#refsARIA">[ARIA]</a> definitions.</p>
+	roles, states and properties are normatively defined in the [[ARIA]] specification. Links to ARIA roles, states and properties     in the table reference the normative [[ARIA]] definitions.</p>
 	<table>
 	<caption><abbr title="Accessible Rich Internet Applications">ARIA</abbr> Roles, States and Properties</caption>
 	<thead>
@@ -1464,8 +1462,7 @@ Abstract: This specification is plain and simple wicked sweet. It sings the best
 	
 	  <p>User agents must implement ARIA semantics on all <span>HTML elements</span>, as defined in the
 	  ARIA specifications. The <span>default implicit ARIA semantics</span> defined below must be
-	  recognised by implementations for the purposes of ARIA processing. <a
-	  href="#refsARIAIMPL">[ARIAIMPL]</a></p>
+	  recognised by implementations for the purposes of ARIA processing. [[ARIAIMPL]]</p>
 	
 	  <p class="note">The ARIA attributes defined in the ARIA specifications, and the <span>strong
 	  native semantics</span> and <span>default implicit ARIA semantics</span> defined below, do not
