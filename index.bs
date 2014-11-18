@@ -1,10 +1,10 @@
-	<h1>ARIA in HTML</h1>
+<h1>ARIA in HTML</h1>
 	
-	<pre class='metadata'>
-	Shortname: html-aria
-	Group: WebSpecs
-	Abstract: This specification is plain and simple wicked sweet. It sings the best of opera and gets auto-published.
-	</pre>
+<pre class='metadata'>
+Shortname: html-aria
+Group: WebSpecs
+Abstract: This specification is plain and simple wicked sweet. It sings the best of opera and gets auto-published.
+</pre>
 	
 	
 	  <p class="auth">Authors may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <span>HTML elements</span>, in accordance with the
