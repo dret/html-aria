@@ -3,7 +3,7 @@
 <pre class='metadata'>
 Shortname: html-aria
 Group: WebSpecs
-Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML5]] elements. It also defines a subset of requirments for UA implementers.
+Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML5]] elements. It also defines requirements for Conformance Checking tools and a subset of requirements for UA implementers.
 </pre>
 	
 	<h2 id="rules-wd">Rules of ARIA use in HTML for web developers</h2>
