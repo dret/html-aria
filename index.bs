@@ -3,10 +3,10 @@
 <pre class='metadata'>
 Shortname: html-aria
 Group: WebSpecs
-Abstract: This specification is plain and simple wicked sweet. It sings the best of opera and gets auto-published.
+Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[HTML5]] elements.
 </pre>
 	
-	
+	<h2>Rules of ARIA use in HTML for web developers</h2>
 	  <p class="auth">Authors may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <span>HTML elements</span>, in accordance with the
 	  requirements described in the ARIA specifications, except where these conflict with the
 	  <span>strong native semantics</span> or are equal to the <span>default implicit ARIA semantics</span>
