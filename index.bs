@@ -23,7 +23,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  semantics</span> defined in the following two tables.</p>
 	
 	  
-	  <h2 id="aria-role-attribute">ARIA Role Attribute</h2>
+	  <h3 id="aria-role-attribute">ARIA Role Attribute</h3>
 	
 	  <p>Any HTML element, other than elements having <a
 	  href="#sec-strong-native-semantics">Strong Native Semantics</a> 
@@ -38,7 +38,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	
 	  
 	
-	  <h2 id="state-and-property-attributes">State and Property Attributes</h2>
+	  <h3 id="state-and-property-attributes">State and Property Attributes</h3>
 	
 	  <p>Every HTML element may have ARIA state and property attributes
 	  specified. These attributes are defined by [[!wai-aria]] in <a
@@ -68,7 +68,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  well as [[!wai-aria]] and [[!wai-aria-implementation]].</p>
 	
 	  
-	  <h2 id="sec-strong-native-semantics">Strong Native Semantics</h2>
+	  <h3 id="sec-strong-native-semantics">Strong Native Semantics</h3>
 	  
 	
 	  <p>The following table defines the <span>strong native semantics</span> and corresponding
@@ -487,7 +487,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	
 	  </table>
 	
-	  <h2 id="sec-implicit-aria-semantics">Implicit ARIA Semantics</h2>
+	  <h3 id="sec-implicit-aria-semantics">Implicit ARIA Semantics</h3>
 
 	<p>Some <span>HTML elements</span> have native semantics that can be overridden. The following
 	table lists these elements and their <span>default implicit ARIA semantics</span>, along with the
@@ -872,9 +872,8 @@ Abstract: This specification defines the web developer (author) rules (conforman
       <code data-x="attr-aria-role-tablist">tablist</code>,
       <code data-x="attr-aria-role-toolbar">toolbar</code>,
       <code data-x="attr-aria-role-tree">tree</code>,
-      <!-- FORK -->
       or <code data-x="attr-aria-role-presentation">presentation</code>
-      <!-- FORK END -->
+
 
     <tr>
 
@@ -904,7 +903,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
   
     <div class="note">
     <p>Authors are encouraged to make use of the following documents for guidance on using ARIA in
-    HTML beyond that which is provided in this section:</p>
+    HTML beyond that which is provided here:</p>
 
     <ul>
       <li><a href="http://rawgithub.com/w3c/aria-in-html/master/index.html">Using WAI-ARIA in HTML</a> -
