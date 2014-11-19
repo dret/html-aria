@@ -3,10 +3,10 @@
 <pre class='metadata'>
 Shortname: html-aria
 Group: WebSpecs
-Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[HTML5]] elements.
+Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML5]] elements. It also defines a subset of requirments for UA implementers.
 </pre>
 	
-	<h2>Rules of ARIA use in HTML for web developers</h2>
+	<h2 id="rules-wd">Rules of ARIA use in HTML for web developers</h2>
 	  <p class="auth">Authors may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <span>HTML elements</span>, in accordance with the
 	  requirements described in the ARIA specifications, except where these conflict with the
 	  <span>strong native semantics</span> or are equal to the <span>default implicit ARIA semantics</span>
@@ -1457,7 +1457,8 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	</tbody>
 	</table>
 	</div>
-	<h3 id="for-implementers">For Implementers</h3>
+	<h2 id="for-implementers">Requirements for implementers</h2>
+	<h3 id="ua-implementers">UA implementers</h3>
 	<div class="impl">
 	
 	  <p>User agents must implement ARIA semantics on all <span>HTML elements</span>, as defined in the
@@ -1489,7 +1490,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  fields or landmark navigation. User agents are encouraged to
 	  maximize their usefulness to users, including users without
 	  disabilities.</p>
-	
+	<h3 id="checker-implementers">Conformance Checker implementers</h3>
 	
 	  <p>Conformance checkers are encouraged to phrase errors such that authors are encouraged to use
 	  more appropriate elements rather than remove accessibility annotations. For example, if an
