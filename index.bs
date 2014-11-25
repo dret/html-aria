@@ -10,7 +10,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	<h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
 	  <p class="auth">Authors may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <span>HTML elements</span>, in accordance with the
 	  requirements described in the ARIA specifications, except where these conflict with the
-	  <span>strong native semantics</span> or are equal to the [[#implicit_semantics]]
+	  <span>strong native semantics</span> or are equal to the [[http://www.w3.org/TR/wai-aria/host_languages#implicit_semantics]]
 	  described below. These exceptions are intended to prevent authors from making
 	  assistive technology products report nonsensical states that do not represent the actual state of
 	  the document. [[!wai-aria]]</p>
