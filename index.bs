@@ -5,11 +5,22 @@ Shortname: html-aria
 Group: WebSpecs
 Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML5]] elements. It also defines requirements for Conformance Checking tools and a subset of requirements for UA implementers.
 </pre>
+<pre class="anchors">
+[
+    {
+        "linkingText": "implicit WAI-ARIA semantics",
+        "type": "dfn",
+        "url": "http://www.w3.org/TR/wai-aria/host_languages#implicit_semantics",
+        "shortname": "implicit",
+        "status": "dated"
+    }
+]
+</pre>
 	
 	<h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
 	  <p class="auth">Authors may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <span>HTML elements</span>, in accordance with the
 	  requirements described in the ARIA specifications, except where these conflict with the
-	  <span>strong native semantics</span> or are equal to the <span>default implicit ARIA semantics</span>
+	  <span>strong native semantics</span> or are equal to the <a>implicit ARIA semantics</a>
 	  described below. These exceptions are intended to prevent authors from making
 	  assistive technology products report nonsensical states that do not represent the actual state of
 	  the document. [[!wai-aria]]</p>
