@@ -1617,5 +1617,6 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	
 	  </div>
 	
-
+<script src="details-summary/common/script/jquery-1.9.0.min.js"></script>
+<script src="details-summary/jquery.details.min.js"></script>
 
