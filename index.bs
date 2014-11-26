@@ -15,8 +15,9 @@ Abstract: This specification defines the web developer (author) rules (conforman
       <pre>
        &lt;button role=&quot;heading&quot;&gt;search&lt;/button&gt;
       </pre>
-     <details><summary>Conformance checker error</summary><iframe style="width:100%;height:500px"src="http://validator.w3.org/nu/?doc=https%3A%2F%2Fspecs.webplatform.org%2Fhtml-aria%2Fwebspecs%2Fmaster%2Fexamples%2Fnonconforming1.html" scrolling="auto"></iframe>
-     <details>
+     <details><summary>Conformance checker error</summary>
+	 <iframe style="width:100%;height:500px" src="http://validator.w3.org/nu/?doc=https%3A%2F%2Fspecs.webplatform.org%2Fhtml-aria%2Fwebspecs%2Fmaster%2Fexamples%2Fnonconforming1.html" scrolling="auto"></iframe>
+     </details>
       </div>
 	
 	  <p class="auth">Web developers  must not set the ARIA <code data-x="attr-aria-role">role</code> and <code
