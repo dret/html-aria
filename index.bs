@@ -1,4 +1,3 @@
-
 <h1>ARIA in HTML</h1>
 	
 <pre class='metadata'>
