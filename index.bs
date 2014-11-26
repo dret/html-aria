@@ -22,7 +22,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
      </details>
       </div>
 	
-	  <p class="auth">Web developers  must not set the ARIA <code data-x="attr-aria-role">role</code> and <code
+	  <p class="auth">Web developers  must not set the ARIA <code>role</code> and <code
 	  data-x="attr-aria-*">aria-*</code> attributes in a manner that conflicts with the semantics
 	  described in the following table. Web developers should not
 	  set the ARIA <code data-x="attr-aria-role">role</code> and <code
