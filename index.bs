@@ -66,8 +66,8 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  <h3 id="sec-strong-native-semantics">Strong Native Semantics</h3>
 	  
 	
-	  <p>The following table defines the <span>strong native semantics</span> and corresponding
-	  <span>default implicit ARIA semantics</span> that apply to <span>HTML elements</span>. Each
+	  <p>The following table defines the <a>strong native semantics</a> and corresponding
+	  <a>default implicit ARIA semantics</a> that apply to <a>HTML elements</a>. Each
 	  language feature (element or attribute) in a cell in the first column implies the ARIA semantics
 	  (any role, states, and properties) given in the cell in the second column of the same row. <span
 	  class="impl">When multiple rows apply to an element, the role from the last row to define a role
@@ -157,7 +157,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 			  <td><strong class="nosupport">NONE</strong></td>
 			</tr>
 			<tr>
-			  <td><a><code>body</code></a></td>
+			  <td><dfn element><code>body</code></dfn></td>
 			  <td><code>role=<a href="#index-aria-document">document</a></code></td>
 			  <td><a href="#index-aria-global">global <code>aria-*</code> attributes</a> </td>
 			</tr>
