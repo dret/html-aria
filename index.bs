@@ -1,3 +1,4 @@
+
 <h1>ARIA in HTML</h1>
 	
 <pre class='metadata'>
@@ -7,20 +8,24 @@ Abstract: This specification defines the web developer (author) rules (conforman
 </pre>
 
 	
-	<h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
-	  <p>Web developers <a>may</a> use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a>HTML elements</a>, in accordance with the requirements described in [[!wai-aria]], except where these conflict with the
-	  <span>strong native semantics</span> or are equal to the [[http://www.w3.org/TR/wai-aria/host_languages#implicit_semantics]]
-	  described below. These exceptions are intended to prevent authors from making
-	  assistive technology products report nonsensical states that do not represent the actual state of
-	  the document. [[!wai-aria]]</p>
+<h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
+	  <p>Web developers <a>may</a> use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a href="http://www.w3.org/TR/html/index.html#elements-1">HTML elements</a><a></a>, in accordance with the requirements described in [[!wai-aria]], except where these conflict with the
+	  <a href="http://www.w3.org/TR/html/infrastructure.html#strong-native-semantics"><dfn>strong native semantics</dfn></a> or are equal to the <a href="http://www.w3.org/TR/html/infrastructure.html#default-implicit-aria-semantics"><dfn>default implicit ARIA semantics</dfn></a> of a given HTML element. These constraints are intended to prevent developers from making assistive technology products report nonsensical user interface information (UI) that does not represent the actual UI of the document. </p>
+	  <div class="example">
+      The following uses a <code>role=heading</code> on a <code>button</code> element. This is not allowed because the <code>button</code> element has default characteristics that conflict with the heading role.
+      <pre>
+       &lt;button role=&quot;heading&quot;&gt;search&lt;/button&gt;
+      </pre>
+     <details><summary>Conformance checker error</summary><iframe style="width:100%;height:500px"src="http://validator.w3.org/nu/?doc=https%3A%2F%2Fspecs.webplatform.org%2Fhtml-aria%2Fwebspecs%2Fmaster%2Fexamples%2Fnonconforming1.html" scrolling="auto"></iframe>
+     <details>
+      </div>
 	
-	  <p class="auth">Authors must not set the ARIA <code data-x="attr-aria-role">role</code> and <code
+	  <p class="auth">Web developers  must not set the ARIA <code data-x="attr-aria-role">role</code> and <code
 	  data-x="attr-aria-*">aria-*</code> attributes in a manner that conflicts with the semantics
-	  described in the following table, except that the <code
-	  data-x="attr-aria-role-presentation">presentation</code> role may always be used. Authors must not
+	  described in the following table. Web developers should not
 	  set the ARIA <code data-x="attr-aria-role">role</code> and <code
 	  data-x="attr-aria-*">aria-*</code> attributes to values that match the <span>default implicit ARIA
-	  semantics</span> defined in the following two tables.</p>
+	  semantics</span> defined in the  table.</p>
 	
 	  
 	  <h3 id="aria-role-attribute">ARIA Role Attribute</h3>
@@ -41,10 +46,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  <h3 id="state-and-property-attributes">State and Property Attributes</h3>
 	
 	  <p>Every HTML element may have ARIA state and property attributes
-	  specified. These attributes are defined by [[!wai-aria]] in <a
-	  href="http://www.w3.org/TR/wai-aria/states_and_properties#state_prop_def">Section
-	  6.6, Definitions of States and Properties (all aria-*
-	  attributes)</a>.</p>
+	  specified. These attributes are defined by [[!wai-aria]].</p>
 	
 	  <p>A subset of the ARIA State and Property attributes are defined as "<a>Global States and Properties<a>" in 
 	  <a href="http://www.w3.org/TR/wai-aria/states_and_properties#global_states">Section 6.4. Global States and Properties</a> 
@@ -66,8 +68,8 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  <h3 id="sec-strong-native-semantics">Strong Native Semantics</h3>
 	  
 	
-	  <p>The following table defines the <a>strong native semantics</a> and corresponding
-	  <a>default implicit ARIA semantics</a> that apply to <a>HTML elements</a>. Each
+	  <p>The following table defines the <span>strong native semantics</span> and corresponding
+	  <span>default implicit ARIA semantics</span> that apply to <span>HTML elements</span>. Each
 	  language feature (element or attribute) in a cell in the first column implies the ARIA semantics
 	  (any role, states, and properties) given in the cell in the second column of the same row. <span
 	  class="impl">When multiple rows apply to an element, the role from the last row to define a role
@@ -84,6 +86,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  unnecessary and not recommended as these properties are already set by the browser.</p>
 	
 	
+
  <table>
 		  <caption>
 		  Rules use of ARIA attributes usage by HTML language feature
@@ -99,7 +102,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 			  <TD>varies</TD>
 			  <TD>Role: <code><a href="#index-aria-presentation">presentation</a>,</code> except focusable elements or those with the warning '<strong> 
 			  Not</strong> <code>role=presentation</code>' or those indicated:  <strong class="nosupport">NONE</strong></TD>
-			</TR>
+   </TR>
 			<TR>
 			  <TD><a href="http://www.w3.org/html/wg/drafts/html/master/text-level-semantics.html#the-a-element"><code>a</code></a> element with a <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/links.html#attr-hyperlink-href"><code>href</code></a></TD>
@@ -157,7 +160,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 			  <td><strong class="nosupport">NONE</strong></td>
 			</tr>
 			<tr>
-			  <td><dfn element><code>body</code></dfn></td>
+			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-body-element"><code>body</code></a></td>
 			  <td><code>role=<a href="#index-aria-document">document</a></code></td>
 			  <td><a href="#index-aria-global">global <code>aria-*</code> attributes</a> </td>
 			</tr>
@@ -983,7 +986,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 			  </code>). </td>
 			  <td><em>DEPENDS</em></td>
 			  <td><strong>Not</strong> <code>role=presentation </code>
-			    </td>
+       </td>
 			</tr>
 			<tr>
 			  <td>Element that is a <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#candidate-for-constraint-validation">candidate for 
@@ -996,11 +999,10 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	aria-invalid="grammar"</code> and <code>aria-invalid="spelling"</code></p>
 	</td>
 			</tr>
-		  </table>
+</table>
           
           <p>The listed elements with default ARIA semantics of <dfn>NONE</dfn> do not have any default ARIA semantics, but they do have meaning and this meaning may be represented in roles, states and properties not provided by ARIA, but present in accessibility APIs. It is therefore recommended that authors should add a role attribute to a semantically neutral element such as a <code>div</code> or <code>span</code>, rather than overriding the semantics of the listed elements. </p>
-</body>
-</html>
+
 	
 		
 
@@ -1041,7 +1043,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
    painful reading of lots of punctuation. Using the features described in this section, one can
    instead make the ATs skip the ASCII art and just read the caption:</p>
 
-   <pre>&lt;figure <strong>role="img" aria-labelledby="fish-caption"</strong>> <!-- that's "l a b e l l e d" with TWO "l"s -->
+   <pre>&lt;figure <strong>role="img" aria-labelledby="fish-caption"</strong>
    &lt;pre>
    o           .'`/
      '      /  (
@@ -1585,9 +1587,9 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  technologies, or the default actions of user interaction events as described in this
 	  specification.</p> --> 
 	
-	  </div>
+</div>
 	
-	   <div class="impl">
+	   
 	
 	  <p>The WAI-ARIA role that an HTML element has assigned to it is the
 	  first non-abstract role found in the list of values generated when the
@@ -1613,4 +1615,5 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	
 	  </div>
 	
+
 
