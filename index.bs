@@ -8,7 +8,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 
 	
 	<h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
-	  <p>Web developers may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a>HTML elements</a>, in accordance with the requirements described in [[!wai-aria]], except where these conflict with the
+	  <p>Web developers <a>may</a> use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a>HTML elements</a>, in accordance with the requirements described in [[!wai-aria]], except where these conflict with the
 	  <span>strong native semantics</span> or are equal to the [[http://www.w3.org/TR/wai-aria/host_languages#implicit_semantics]]
 	  described below. These exceptions are intended to prevent authors from making
 	  assistive technology products report nonsensical states that do not represent the actual state of
