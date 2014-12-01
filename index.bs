@@ -1606,7 +1606,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  example a <code>button</code> element or an <code>input</code> element" rather than "The <code
 	 >button</code> role cannot be used with <code>a</code> elements".</p>
 	</div>
-<script src="https://specs.webplatform.org/html-aria/webspecs/master/details-summary/common/script/jquery-1.9.0.min.js"></script>
+<script src="https://specs.webplatform.org/html-aria/webspecs/master/details-summary/common/script/jquery-2.1.1.min.js"></script>
 <script src="https://specs.webplatform.org/html-aria/webspecs/master/details-summary/jquery.details.min.js"></script>
 <script> $(function() {$('details').details();}); </script>	
 
