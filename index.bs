@@ -1608,10 +1608,6 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	</div>
 <script src="https://specs.webplatform.org/html-aria/webspecs/master/details-summary/common/script/jquery-1.9.0.min.js"></script>
 <script src="https://specs.webplatform.org/html-aria/webspecs/master/details-summary/jquery.details.min.js"></script>
-<script>
-			// Call the details() polyfill to act on all instances of <details>
-			$(function() {$('details').details();});
-			
-</script>	
+<script> $(function() {$('details').details();}); </script>	
 
 
