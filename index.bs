@@ -956,7 +956,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 			  <td><p>Use the <code>aria-required</code> attribute on any element that is <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/index.html#attributes-1">allowed the <code>required</code> attribute</a> in HTML5. 
 			  </p>
-			  <p>Also use the <code>aria-required </code>attribute for elements that have an attached ARIA role which allows the <code>aria-required
+			  <p>Also use the <code>aria-required</code> attribute for elements that have an attached ARIA role which allows the <code>aria-required
 			  </code> attribute.</p></td>
 			</tr>
 			<tr>
@@ -966,7 +966,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 			  <td><p>Use the <code>readonly</code> attribute on any element that is <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/index.html#attributes-1">allowed the <code>readonly</code> attribute</a> in HTML5. 
 			  </p>
-			  <p>Only use the <code>aria-disabled</code> attribute for elements that are <em>not allowed</em> to have a <code>readonly</code> attribute in HTML5
+			  <p>Only use the <code>aria-readonly</code> attribute for elements that are <em>not allowed</em> to have a <code>readonly</code> attribute in HTML5
 			  </p></td>
 			</tr>
 			<tr>
