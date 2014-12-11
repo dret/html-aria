@@ -94,7 +94,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	
 			<tr>
 			  <th>HTML language feature </th>
-			  <th>Default  ARIA semantics - SHOULD not be used</th>
+			  <th>Default  ARIA semantics - SHOULD NOT be used</th>
 			  <th>ARIA roles, states and properties which MAY be used</th>
 			</tr>
 	  <TR>
