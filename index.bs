@@ -6,8 +6,9 @@ Group: WebSpecs
 Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML5]] elements. It also defines requirements for Conformance Checking tools and a subset of requirements for UA implementers.
 </pre>
 
-	
+
 <h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
+<p class="advisement">This is a draft document and its contents are subject to change without notice.</p>	
 	  <p>Web developers may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a href="http://www.w3.org/TR/html/index.html#elements-1">HTML elements</a>, in accordance with the requirements described in [[!wai-aria]], except where these conflict with the
 	  <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#strong-native-semantics">strong native semantics</a></dfn> or are equal to the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#default-implicit-aria-semantics">default implicit ARIA semantics</a></dfn> of a given HTML element. These constraints are intended to prevent developers from making assistive technology products report nonsensical user interface information (UI) that does not represent the actual UI of the document. </p>
 	  <div class="example">
