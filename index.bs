@@ -52,7 +52,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  10.2 Mapping WAI-ARIA Value types to languages</a> using the HTML5
 	  mapping.</p>
 	
-	  <p>ARIA State and Property attributes can be used on any element. They
+	  <p class="note">ARIA State and Property attributes can be used on any element. They
 	  are not always meaningful, however, and in such cases user agents
 	  might not perform any processing aside from including them in the DOM.</p>
 	
