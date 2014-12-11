@@ -9,8 +9,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 
 <h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
 <p class="advisement">This is a draft document and its contents are subject to change without notice.</p>	
-	  <p>Web developers may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a href="http://www.w3.org/TR/html/index.html#elements-1">HTML elements</a>, in accordance with the requirements described in [[!wai-aria]], except where these conflict with the
-	  <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#strong-native-semantics">strong native semantics</a></dfn> or are equal to the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#default-implicit-aria-semantics">default implicit ARIA semantics</a></dfn> of a given HTML element. These constraints are intended to prevent developers from making assistive technology products report nonsensical user interface information (UI) that does not represent the actual UI of the document. </p>
+	  <p>Web developers may use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a href="http://www.w3.org/TR/html/index.html#elements-1">HTML elements</a>, in accordance with the requirements described in [[!wai-aria]], except where these conflict with the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#strong-native-semantics">strong native semantics</a></dfn> or are equal to the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#default-implicit-aria-semantics">default implicit ARIA semantics</a></dfn> of a given HTML element. These constraints, detailed in the  are intended to prevent developers from making assistive technology products report nonsensical user interface information (UI) that does not represent the actual UI of the document. </p>
 	  <div class="example">
       The following uses a <code>role=heading</code> on a <code>button</code> element. This is not allowed because the <code>button</code> element has default characteristics that conflict with the heading role.
       <pre>
@@ -23,23 +22,17 @@ Abstract: This specification defines the web developer (author) rules (conforman
      </details>
       </div>
 	
-	  <p>Web developers  must not set the ARIA <code>role</code> and <code>aria-*</code> attributes in a manner that conflicts with the semantics
-	  described in the following table. Web developers should not
-	  set the ARIA <code>role</code> and <code>aria-*</code> attributes to values that match the <span>default implicit ARIA
-	  semantics</span> defined in the  table.</p>
+	  <p>Web developers MUST NOT use the ARIA <code>role</code> and <code>aria-*</code> attributes in a manner that conflicts with the semantics described in the <a>Document conformance requirements for use of ARIA attributes in HTML</a> table. Web developers SHOULD NOT set the ARIA <code>role</code> and <code>aria-*</code> attributes to values that match the <span>default implicit ARIA semantics</span> defined in the table.</p>
 	
 	  
 	  <h3 id="aria-role-attribute">ARIA Role Attribute</h3>
 	
-	  <p>Any HTML element, other than elements having <a
-	  href="#sec-strong-native-semantics">Strong Native Semantics</a> 
-	  of <span>No role</span>, may have an ARIA <code>role</code> attribute specified. 
+	  <p>Any HTML element, other than elements indicated <a>Document conformance requirements for use of ARIA attributes in HTML</a> as allowing <span>No role</span>, may have an ARIA <code>role</code> attribute specified. 
 	  This is an ARIA Role attribute as defined by [[!wai-aria]] 
-	  <a href="http://www.w3.org/TR/wai-aria/roles#role_definitions">Section
-	  5.4 Definition of Roles</a>.</p>
+	  <a href="http://www.w3.org/TR/wai-aria/roles#role_definitions">Section 5.4 Definition of Roles</a>.</p>
 	
-	  <p>The attribute, if specified, must have a value that is a set of space-separated tokens; 
-	  each token must be a non-abstract role defined in the WAI-ARIA specification 
+	  <p>The attribute, if specified, MUST have a value that is a set of space-separated tokens; 
+	  each token MUST be a non-abstract role defined in the WAI-ARIA specification 
 	  [[!wai-aria]].</p>
 	
 	  
@@ -53,7 +46,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  <a href="http://www.w3.org/TR/wai-aria/states_and_properties#global_states">Section 6.4. Global States and Properties</a> 
 	  of the [[!wai-aria]] Specification.</p>
 	
-	  <p>These attributes, if specified, must have a value that is the ARIA
+	  <p>These attributes, if specified, MUST have a value that is the ARIA
 	  value type in the "Value" field of the definition for the state or
 	  property, mapped to the appropriate HTML value type according to 
 	  [[!wai-aria]] <a
@@ -69,25 +62,24 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	  <h3 id="sec-strong-native-semantics">Strong Native Semantics</h3>
 	  
 	
-	  <p>The following table defines the <span>strong native semantics</span> and corresponding
-	  <span>default implicit ARIA semantics</span> that apply to <span>HTML elements</span>. Each
+	  <p>The following table defines the <span>default implicit ARIA semantics</span> that apply to <span>HTML elements</span>. Each
 	  language feature (element or attribute) in a cell in the first column implies the ARIA semantics
 	  (any role, states, and properties) given in the cell in the second column of the same row. <span
 	  class="impl">When multiple rows apply to an element, the role from the last row to define a role
-	  must be applied, and the states and properties from all the rows must be combined.</span></p>
+	  MUST be applied, and the states and properties from all the rows MUST be combined.</span></p>
 	
 	
-	  <p>Documents must not use any <code data-x="attr-aria-role">role</code> values with elements 
-	  in the following table other than the corresponding role value (if any) as listed for that element in the second column, 
-	  or the <code data-x="attr-aria-role">role</code> value "<code>presentation</code>", if the second column indicates that element's 
+	  <p>Documents MUST NOT use any <code data-x="attr-aria-role">role</code> values with elements 
+	  in the following table other than the corresponding role value (if any) as listed for that element in the third column, 
+	  or the <code data-x="attr-aria-role">role</code> value "<code>presentation</code>", if the third column indicates that element's 
 	  semantics can be removed by using the "<code>presentation</code>" <code data-x="attr-aria-role">role</code> value.</p>
 	  
-	 <p class="note" id="aria-usage-note">In the majority of cases setting an ARIA <code data-x="attr-aria-role">role</code> and/or <code
+	 <p class="note" id="aria-usage-note">Setting an ARIA <code data-x="attr-aria-role">role</code> and/or <code
 	  data-x="attr-aria-*">aria-*</code> attribute that matches the <span>default implicit ARIA semantics</span> is
-	  unnecessary and not recommended as these properties are already set by the browser.</p>
+	  unnecessary and is NOT RECOMMENDED as these properties are already set by the browser.</p>
 	
 	
-<h2 id="docconformance">Document conformance requirements for ARIA attributes in HTML</h2>
+<h2 id="docconformance">Document conformance requirements for use of ARIA attributes in HTML</h2>
  <table>
 		  <caption>
 		  Rules use of ARIA attributes usage by HTML language feature
@@ -1578,8 +1570,8 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	<h3 id="ua-implementers">UA implementers</h3>
 	<div class="impl">
 	
-	  <p>User agents must implement ARIA semantics on all HTML elements, as defined in the
-	  ARIA specifications. The default implicit ARIA semantics defined in section <a href="http://rawgit.com/w3c/aria/master/html-aam/html-aam.html#mapping-to-existing-wai-aria-role-semantics">2.3.1 Mapping to Existing WAI-ARIA Role Semantics</a> of the <a href="http://rawgit.com/w3c/aria/master/html-aam/html-aam.html">HTML Accessibility API Mappings 1.1</a> specification, as well as [[!wai-aria]] and [[!wai-aria-implementation]] must be
+	  <p>User agents MUST implement ARIA semantics on all HTML elements, as defined in the
+	  ARIA specifications. The default implicit ARIA semantics defined in section <a href="http://rawgit.com/w3c/aria/master/html-aam/html-aam.html#mapping-to-existing-wai-aria-role-semantics">2.3.1 Mapping to Existing WAI-ARIA Role Semantics</a> of the <a href="http://rawgit.com/w3c/aria/master/html-aam/html-aam.html">HTML Accessibility API Mappings 1.1</a> specification, as well as [[!wai-aria]] and [[!wai-aria-implementation]] MUST be
 	  recognised by implementations for the purposes of ARIA processing. [[!wai-aria-implementation]]</p>
 </div>
 	
