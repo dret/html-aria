@@ -102,7 +102,7 @@ Abstract: This specification defines the web developer (author) rules (conforman
 				allowed roles</p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></TD>
 			</TR>
-			<TR>
+			<TR id="anohref" tabindex="-1">
 			  <TD><a href="http://www.w3.org/html/wg/drafts/html/master/text-level-semantics.html#the-a-element"><code>a</code></a> element without a <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/links.html#attr-hyperlink-href"><code>href</code></a></TD>
 			  <td><a>NONE</a></td>
