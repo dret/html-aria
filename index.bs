@@ -103,6 +103,14 @@ Abstract: This specification defines the web developer (author) rules (conforman
 			  <p><strong>Not</strong> <code>role=presentation</code></p></TD>
 			</TR>
 			<TR>
+			  <TD><a href="http://www.w3.org/html/wg/drafts/html/master/text-level-semantics.html#the-a-element"><code>a</code></a> element without a <a 
+			  href="http://www.w3.org/html/wg/drafts/html/master/links.html#attr-hyperlink-href"><code>href</code></a></TD>
+			  <td><a>NONE</a></td>
+			  <td><p>Role: Any</p>
+				<p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable allowed roles</p>
+			  </td>
+			</TR>
+			<TR>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-address-element"><code>address</code></a> 
 			  <td><a>NONE</a></td>
 			  <TD><p>Role:<a href="#index-aria-contentinfo"><code>contentinfo</code></a><br>
