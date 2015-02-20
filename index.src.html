@@ -1,10 +1,29 @@
-<h1>ARIA in HTML</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ARIA in HTML</title>
+    <meta charset='utf-8'>
+
+<script src='http://www.w3.org/Tools/respec/respec-w3c-common'
+            async class='remove'></script>
+    <script class='remove'>
+      var respecConfig = {
+          specStatus: "webspec",
+          shortName:  "html-aria",
+		  repository: "webspecs/html-aria",
+          editors: [
+                {   name:       "Steve Faulkner",
+                    url:        "http://www.paciellogroup.com",
+                    company:    "W3C",
+                    companyURL: "http://w3c.org/" }
+          ],
+      };
+    </script>
+<body>
 	
-<pre class='metadata'>
-Shortname: html-aria
-Group: WebSpecs
-Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML5]] elements. It also defines requirements for Conformance Checking tools and a subset of requirements for UA implementers.
-</pre>
+<section id='abstract'>
+Abstract: This specification defines the web developer (author) rules (conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML5]] elements. It also defines requirements for Conformance Checking tools.
+</section>
 
 
 <h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
@@ -23,44 +42,10 @@ Abstract: This specification defines the web developer (author) rules (conforman
      </details>
       </div>
  
-	  <h3 id="aria-role-attribute">ARIA Role Attribute</h3>
-	
-	  <p>Any HTML element, other than elements indicated <span>Document conformance requirements for use of ARIA attributes in HTML</span> as allowing <span>No role</span>, may have an ARIA <code>role</code> attribute specified. 
-	  This is an ARIA Role attribute as defined by [[!wai-aria]] 
-	  <a href="http://www.w3.org/TR/wai-aria/roles#role_definitions">Section 5.4 Definition of Roles</a>.</p>
-	
-	  <p>The attribute, if specified, MUST have a value that is a set of space-separated tokens; 
-	  each token MUST be a non-abstract role defined in the WAI-ARIA specification 
-	  [[!wai-aria]].</p>
-	
-	  
-	
-	  <h3 id="state-and-property-attributes">State and Property Attributes</h3>
-	
-	  <p>Every HTML element may have ARIA state and property attributes
-	  specified. These attributes are defined by [[!wai-aria]].</p>
-	
-	  <p>A subset of the ARIA State and Property attributes are defined as "<a>Global States and Properties</a>" in 
-	  <a href="http://www.w3.org/TR/wai-aria/states_and_properties#global_states">Section 6.4. Global States and Properties</a> 
-	  of the [[!wai-aria]] Specification.</p>
-	
-	  <p>These attributes, if specified, MUST have a value that is the ARIA
-	  value type in the "Value" field of the definition for the state or
-	  property, mapped to the appropriate HTML value type according to 
-	  [[!wai-aria]] <a
-	  href="http://www.w3.org/TR/wai-aria/appendices#typemapping">Section
-	  10.2 Mapping WAI-ARIA Value types to languages</a> using the HTML5
-	  mapping.</p>
-	
-	  <p class="note">ARIA State and Property attributes can be used on any element. They
-	  are not always meaningful, however, and in such cases user agents
-	  might not perform any processing aside from including them in the DOM.</p>
-	
-	  
 	  <h3 id="sec-strong-native-semantics">Default Implicit Semantics</h3>
 	  
 	
-	  <p>The following table defines the <span>default implicit ARIA semantics</span> that apply to <a href="http://www.w3.org/TR/html/dom.html#elements">HTML elements</a>. Each
+	  <p>The following table describes the <span>default implicit ARIA semantics</span> that apply to <a href="http://www.w3.org/TR/html/dom.html#elements">HTML elements</a> as defined in the <a href="http://rawgit.com/w3c/aria/master/html-aam/html-aam.html">HTML Accessibility API Mappings</a> specification. Each
 	  language feature (element or attribute) in a cell in the first column implies the ARIA semantics
 	  (any role, states, and properties) given in the cell in the second column of the same row.</p>
 	
@@ -1568,31 +1553,9 @@ Abstract: This specification defines the web developer (author) rules (conforman
 	</tbody>
 	</table>
 	</div>
-	<h2 id="for-implementers">Requirements for implementers</h2>
-	<h3 id="ua-implementers">UA implementers</h3>
+	<h2 id="for-implementers">Requirements for implementers	</h2>
 	<div class="impl">
-	
-	  <p>User agents MUST implement ARIA semantics on all HTML elements, as defined in the
-	  ARIA specifications. The default implicit ARIA semantics defined in section <a href="http://rawgit.com/w3c/aria/master/html-aam/html-aam.html#mapping-to-existing-wai-aria-role-semantics">2.3.1 Mapping to Existing WAI-ARIA Role Semantics</a> of the <a href="http://rawgit.com/w3c/aria/master/html-aam/html-aam.html">HTML Accessibility API Mappings 1.1</a> specification, as well as [[!wai-aria]] and [[!wai-aria-implementation]] MUST be
-	  recognised by implementations for the purposes of ARIA processing. [[!wai-aria-implementation]]</p>
-</div>
-	
-	   
-	
-	  <p>The WAI-ARIA role that an HTML element has assigned to it is the
-	  first non-abstract role found in the list of values generated when the
-	  <code data-x="attr-aria-role">role</code> attribute is split on
-	  spaces.</p>
-	  <div class="impl">
-	  <p>The WAI-ARIA specification neither requires or forbids user
-	  agents from enhancing native presentation and interaction behaviors
-	  on the basis of WAI- ARIA markup. Even mainstream user agents might
-	  choose to expose metadata or navigational features directly or via
-	  user-installed extensions; for example, exposing required form
-	  fields or landmark navigation. User agents are encouraged to
-	  maximize their usefulness to users, including users without
-	  disabilities.</p>
-	<h3 id="checker-implementers">Conformance Checker implementers</h3>
+	  <h3 id="checker-implementers">Conformance Checker implementers</h3>
 	
 	  <p>Conformance checkers are encouraged to phrase errors such that authors are encouraged to use
 	  more appropriate elements rather than remove accessibility annotations. For example, if an
@@ -1605,4 +1568,5 @@ Abstract: This specification defines the web developer (author) rules (conforman
 <script src="https://specs.webplatform.org/html-aria/webspecs/master/details-summary/jquery.details.min.js"></script>
 <script> $(function() {$('details').details();}); </script>	
 
-
+</body>
+</html>
