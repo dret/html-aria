@@ -25,7 +25,7 @@
 </section>
 
 
-<h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
+<section><h2 id="rules-wd">Requirements of ARIA use in HTML for web developers</h2>
 <p class="advisement">This is a draft document and its contents are subject to change without notice.</p>	
 	  <p>Web developers MAY use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a href="http://www.w3.org/TR/html/index.html#elements-1">HTML elements</a>, in accordance with the requirements described in [[!wai-aria]], except where these conflict with the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#strong-native-semantics">strong native semantics</a></dfn> or are equal to the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#default-implicit-aria-semantics">default implicit ARIA semantics</a></dfn> of a given HTML element. These constraints, detailed in the  are intended to prevent developers from making assistive technology products report nonsensical user interface information (UI) that does not represent the actual UI of the document. </p>
 	  <p>Web developers MUST NOT use the ARIA <code>role</code> and <code>aria-*</code> attributes in a manner that conflicts with the semantics described in the <a href="#docconformance">Document conformance requirements for use of ARIA attributes in HTML</a> table. Web developers SHOULD NOT set the ARIA <code>role</code> and <code>aria-*</code> attributes to values that match the default implicit ARIA semantics defined in the table.</p>
@@ -40,7 +40,8 @@
      <iframe style="width:100%;height:300px" src="https://specs.webplatform.org/html-aria/webspecs/master/examples/nonconforming1.html" scrolling="auto"></iframe>
      </details>
       </div>
- 
+ </section>
+ <section>
 	  <h3 id="sec-strong-native-semantics">Default Implicit Semantics</h3>
 	  
 	
@@ -55,7 +56,8 @@
 	  semantics can be removed by using the "<code>presentation</code>" <code>role</code> value.</p>
 	  
 	 <p class="note" id="aria-usage-note">Setting an ARIA <code>role</code> and/or <code>aria-*</code> attribute that matches the <span>default implicit ARIA semantics</span> is unnecessary and is NOT RECOMMENDED as these properties are already set by the browser.</p>
-	
+	</section>
+    <section>
 	
 <h2 id="docconformance">Document conformance requirements for use of ARIA attributes in HTML</h2>
  <table>
@@ -1043,7 +1045,8 @@
    <!-- source: http://www.geocities.com/SoHo/7373/aquatic.htm#fish -->
 
 	</div>
-  
+    </section>
+  <section>
 	<div class="author">
 	<h3 id="allowed-aria-roles-states-and-properties">Allowed ARIA roles, states and properties</h3>
 	<p><em>This section is non-normative.</em></p>
@@ -1552,9 +1555,11 @@
 	</tbody>
 	</table>
 	</div>
+    </section>
 	<h2 id="for-implementers">Requirements for implementers	</h2>
 	<div class="impl">
 	  <h3 id="checker-implementers">Conformance Checker implementers</h3>
+	  <p>Conformance checkers that claim support for checking of ARIA in HTML must implement checks for the document conformance requirements for use of the ARIA role and aria-* attributes on HTML elements as defined in this specification.</p>
 	
 	  <p>Conformance checkers are encouraged to phrase errors such that authors are encouraged to use
 	  more appropriate elements rather than remove accessibility annotations. For example, if an
