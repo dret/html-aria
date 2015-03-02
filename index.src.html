@@ -165,7 +165,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-button-element">button</a> <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-button-type-menu-state">type="menu"</a></code>
-			  <td><code>role=button</code> with <code>aria-haspopup=true</code></td>
+			  <td><code>role=<a href="#index-aria-button">button</a></code> with <code>aria-haspopup=true</code></td>
 			  <td><p>Roles: <code><a href="#index-aria-link">link</a>, <a href="#index-aria-menuitem">menuitem</a>, <a 
 			  href="#index-aria-menuitemcheckbox">menuitemcheckbox</a>, <a href="#index-aria-menuitemradio">menuitemradio</a>, <a 
 			  href="#index-aria-radio">radio</a></code>. <br>
@@ -191,7 +191,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-datalist-element">datalist</a> 
 				</code>
-			  <td><code>role=listbox</code>, with  <code>aria-multiselectable=false</code></td>
+			  <td><code>role=<a href="#index-aria-listbox">listbox</a></code>, with  <code>aria-multiselectable=false</code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
 			  <code> listbox</code> role.
 	
@@ -206,15 +206,13 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-details-element">details</a> 
 				</code>
-			  <td><code>role=group</code></td>
+			  <td><code>role=<a href="#index-aria-group">group</a></code></td>
 			  <td><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  <code>group</code> role.</td>
 			</tr>
 			<tr>
-			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-dialog-element"><code>dialog</code></a> element 
-			  with no <a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#attr-dialog-open"><code>open</code></a> attribute 
-			  </td>
-			  <td><code>role=dialog</code>, with  <code>aria-hidden</code> <code>=</code><code>true</code></td>
+			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-dialog-element"><code>dialog</code></a></td>
+			  <td><code>role=<a href="#index-aria-dialog">dialog</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  <code>dialog</code> role. </p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
@@ -230,7 +228,7 @@
 			</tr>
 			<tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-dl-element"><code>dl</code></a>      
-			  <td><code>role=list</code></td>
+			  <td><code>role=<a href="#index-aria-list">list</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p></td>
 			</tr>
 			<tr>
@@ -251,13 +249,13 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-footer-element">footer</a> 
 				</code>
-			  <td><a>NONE</a></td>
+			  <td>If child of <code>body</code> element <code>role=<a href="#index-aria-contentinfo">contentinfo</a></code>, otherwise NONE</td>
 			  <td><p>Use <code>contentinfo</code> role for the main <code>footer</code> on a page. </p>
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> </p></td>
 			</tr>
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-form-element">form</a></code></td>
-			  <td><code>role=form</code></td>
+			  <td><code>role=<a href="index-aria-form">form</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p></td>
 			</tr>
 			<tr>
@@ -275,7 +273,7 @@
 			<tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"><code>h1</code></a> to <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"><code>h6</code></a> element</td>
-			  <td><code>role=heading</code>, with the <code>aria-level</code> = element's <a 
+			  <td><code>role=<a href="#aria-index-heading">heading</a></code>, with the <code>aria-level</code> = element's <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#outline-depth">outline depth</a></td>
 			  <td><span><a href="#index-aria-global">global <code>aria-*</code> attributes</a> </span></td>
 			</tr>
@@ -287,14 +285,14 @@
 			</tr>
 			<tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-header-element"><code>header</code></a>
-			  <td><a>NONE</a></td>
+			  <td><a>If child of body element <code>role=</code></a><code><a href="#index-aria-banner">banner</a></code><a>, otherwise NONE</a></td>
 			  <td>
 			  <p>global<a href="#index-aria-global"> <code>aria-*</code> attributes</a> </p></td>
 			</tr>
 					<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-hr-element">hr</a> 
 				</code>
-			  <td><code>role=separator</code></td>
+			  <td><code>role=<a href="#index-aria-separator">separator</a></code></td>
 			  <td>global<code> aria-*</code> attributes and any <code>aria-*</code> attributes applicable to the <code>separator</code> role.</td>
 			</tr>
 			<tr>
@@ -312,7 +310,7 @@
 			</tr>
 	 <tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#the-iframe-element"><code>iframe (seamless)</code></a>
-			  <td>EDITOR: okay to override with any general grouping role.</td>
+			  <td>NONE</td>
 			  <td><p>Role: <code>application, document, </code>or<code> img </code></p>
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  allowed roles</p></td>
@@ -320,7 +318,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#the-img-element">img</a> with <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-alt">alt</a>=&quot;&quot;</code></td>
-			  <td><code>role=presentation</code></td>
+			  <td>NONE</td>
 			  <td>NONE</td>
 			</tr>
 			<tr>
@@ -343,9 +341,8 @@
 			<tr>
 			  <td><code>input type= <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#checkbox-state-(type=checkbox)">checkbox</a></code>
 			  </td>
-			  <td><code>aria-checked=mixed</code> if the element's <a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#dom-input-indeterminate">indeterminate</a> IDL attribute is true, or 
-			  <code>aria-checked=true</code> if <code>checked</code> attribute is present</td>
+			  <td><p>&nbsp;</p>
+			    <p><code>role=<a href="#index-aria-checkbox">checkbox</a></code></p></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 				
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
@@ -372,7 +369,7 @@
 			<tr>
 			  <td><code>input type = <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#e-mail-state-(type=email)">email</a></code>  with 
 			  no <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-input-list"><code>list</code></a> attribute</td>
-			  <td><code>role=textbox</code></td>
+			  <td><code>role=<a href="#index-aria-checkbox">textbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 				<p><strong>Not</strong> <code>role=presentation</code></p>
 			  </td>
@@ -391,7 +388,7 @@
 			<tr>
 			  <td><code>input type= </code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#image-button-state-(type=image)"><code>image
 			  </code></a></td>
-			  <td><code>role=button</code></td>
+			  <td><code>role=<a href="#index-aria-button">button</a></code></td>
 			  <td><p>Role: <code> link, menuitem, menuitemcheckbox, menuitemradio, radio </code></p>
 				<p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 				allowed roles				</p>
@@ -425,14 +422,14 @@
 			<tr>
 			  <td><code>input type = <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#password-state-(type=password)" 
 			  title="attr-input-type-password">password</a></code></td>
-			  <td><code>role=textbox</code></td>
+			  <td><code>role=<a href="#index-aria-textbox">textbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
 			</tr>
 			<tr>
 			  <td><code>input type = <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#radio-button-state-(type=radio)" 
 			  title="attr-input-type-radio">radio</a></code></td>
-			  <td><code>role=radio</code></td>
+			  <td><code>role=<a href="#index-aria-radio">radio</a></code></td>
 			  <td><p>Role: <code>menuitemradio</code></p>
 				<p><a href="#index-aria-global">global <code>aria-*</code> attributes</a>  and any <code>aria-*</code> attributes applicable to the 
 				<code>menuitemradio</code> role.</p>
@@ -441,7 +438,7 @@
 			<tr>
 			  <td><code>input type = <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#range-state-(type=range)" 
 			  title="attr-input-type-range">range</a></code></td>
-			  <td><code>role=slider </code>with <code>aria-valuemax</code> property set to the element's <a data-anolis-xref="concept-input-max" 
+			  <td><code>role=<a href="#index-aria-slider">slider</a></code> with <code>aria-valuemax</code> property set to the element's <a data-anolis-xref="concept-input-max" 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-input-max">maximum</a>, and the <code>aria-valuemin</code> property 
 			  set to the element's <a data-anolis-xref="concept-input-min" 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-input-min">minimum</a>.</td>
@@ -455,7 +452,7 @@
 			<tr>
 			  <td><code>input type= <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#reset-button-state-(type=reset)" 
 			  title="attr-input-type-reset">reset</a></code></td>
-			  <td><code>button</code> role </td>
+			  <td><code>role=<a href="#index-aria-button">button</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
 			</tr>
@@ -464,7 +461,7 @@
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#text-(type=text)-state-and-search-state-(type=search)" 
 			  title="attr-input-type-search">search</a></code>, with no <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-input-list"><code>list</code></a> attribute</td>
-			  <td><code>textbox </code>role</td>
+			  <td><code>role=<a href="#index-aria-textbox">textbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 				<p><strong>Not</strong> <code>role=presentation</code></p>
 			  </td>
@@ -472,7 +469,7 @@
 			<tr>
 			  <td><code>input type = <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#submit-button-state-(type=submit)" 
 			  title="attr-input-type-submit">submit </a></code></td>
-			  <td><code>button</code> role </td>
+			  <td><code>role=<a href="#index-aria-button">button</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
 			</tr>
@@ -480,7 +477,7 @@
 			  <td><code>input type = <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#telephone-state-(type=tel)" 
 			  title="attr-input-type-tel">tel</a> </code>with no <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-input-list"><code>
 			  list</code></a> attribute</td>
-			  <td><code>textbox </code>role</td>
+			  <td><code>role=<a href="#index-aria-textbox">textbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 				<p><strong>Not</strong> <code>role=presentation</code></p>
 			  </td>
@@ -490,7 +487,7 @@
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#text-(type=text)-state-and-search-state-(type=search)">text</a> </code>with 
 			  no <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-input-list" title="concept-input-list"><code>list</code></a> 
 			  attribute</td>
-			  <td><code>textbox</code> role</td>
+			  <td><code>role=<a href="#index-aria-textbox">textbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 				<p><strong>Not</strong> <code>role=presentation</code></p>
 			  </td>
@@ -505,8 +502,7 @@
 			  title="attr-input-type-url">url</a>, </code>or<code> <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#e-mail-state-(type=email)" title="attr-input-type-email">email</a></code> 
 			  with a <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-input-list"><code>list</code></a> attribute</td>
-			  <td><code>combobox</code> role, with the <code>aria-owns</code> property set to the same value as the <a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-input-list"><code>list</code></a> attribute</td>
+			  <td><code>role=<a href="#index-aria-combobox">combobox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
 			  <code> combobox </code>role.
 				</p>
@@ -525,7 +521,7 @@
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#url-state-(type=url)" title="attr-input-type-url"></a>  with no <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#concept-input-list" title="concept-input-list"><code>list</code></a> 
 			  attribute</td>
-			  <td><code>textbox</code> role</td>
+			  <td><code>role=<a href="#index-aria-textbox">textbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> </p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
 			</tr>
@@ -559,19 +555,19 @@
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-li-element"><code>li</code></a> element whose parent is 
 			  an <a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-ol-element"><code>ol</code></a> or <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-ul-element"><code>ul</code></a>
-			  <td><code>role=listitem</code></td>
+			  <td><code>role=<a href="#index-aria-listitem">listitem</a></code></td>
 			  <td><p>Role: <code>listitem, menuitem, menuitemcheckbox, menuitemradio, option, separator, tab, </code>or<code> treeitem</code></p>
 			 </td>
 			</tr>
 			<tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/document-metadata.html#the-link-element"><code>link</code></a> element with a <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/document-metadata.html#attr-link-href"><code>href</code></a></td>
-			  <td><code>role=link</code></td>
+			  <td><code>role=<a href="#index-aria-link">link</a></code></td>
 			  <td><strong class="nosupport">NONE</strong></td>
 			</tr>
 		   <tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-main-element"><code>main</code></a></td>
-			  <td><code>role=main</code></td>
+			  <td><code>role=<a href="#index-aria-main">main</a></code></td>
 			  <td><a href="#index-aria-global">global <code>aria-*</code> attributes</a></td>
 			</tr> 
 			<tr>
@@ -615,7 +611,7 @@
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-menu-element">menu</a> <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#attr-menu-type">type</a> = <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#toolbar-state">toolbar</a></code></td>
-			  <td><code>role=toolbar</code></td>
+			  <td><code>role=<a href="#index-aria-toolbar">toolbar</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
 				<code> toolbar </code>role. </p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
@@ -624,7 +620,7 @@
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-menuitem-element"><code>menuitem</code></a>          
 				<code><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#attr-menuitem-type">type</a> = <a 
 				href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#attr-menuitem-type-state-command">command</a></code>
-			  <td><code>role=menuitem</code></td>
+			  <td><code>role=<a href="#index-aria-menuitem">menuitem</a></code></td>
 			  <td>
 				<p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
 				<code> menuitem </code>role. </p>
@@ -635,7 +631,7 @@
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-menuitem-element"><code>menuitem</code></a> <code>
 			  <a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#attr-menuitem-type">type</a> = <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#attr-menuitem-type-state-checkbox">checkbox</a></code>
-			  <td><code>role=menuitemcheckbox</code></td>
+			  <td><code>role=<a href="#index-aria-menuitemcheckbox">menuitemcheckbox</a></code></td>
 			  <td>
 				<p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
 				<code> menuitemcheckbox </code>role. </p>
@@ -645,7 +641,7 @@
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-menuitem-element"><code>menuitem</code></a> <code>
 			  <a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#attr-menuitem-type">type</a> = <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#attr-menuitem-type-state-radio">radio</a></code>
-			  <td><code>role=menuitemradio</code></td>
+			  <td><code>role=<a href="#index-aria-menuitemradio">menuitemradio</a></code></td>
 			  <td>
 				<p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
 				<code> menuitemradio </code>role. </p>
@@ -660,13 +656,13 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-meter-element">meter</a> 
 				</code>
-			  <td>role=progressbar</td>
+			  <td>role=<a href="#index-aria-progressbar">progressbar</a></td>
 			  <td><a href="#index-aria-global">global <code>aria-*</code> attributes</a></td>
 			</tr>
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-nav-element">nav</a> 
 				</code>
-			  <td><code>role=navigation</code></td>
+			  <td><code>role=<a href="#index-aria-navigation">navigation</a></code></td>
 			  <td><a href="#index-aria-global">global <code>aria-*</code> attributes</a></td>
 			</tr>
 			<tr>
@@ -685,7 +681,7 @@
 			</tr>
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-ol-element">ol</a> </code>
-			  <td><code>role=list </code></td>
+			  <td><code>role=<a href="#index-aria-list">list</a></code></td>
 			  <td><p>Role: <code>directory, group, listbox, menu, menubar, tablist, toolbar </code>or<code> tree </code></p>
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  allowed roles</p></td>
@@ -699,7 +695,7 @@
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-option-element">option</a> element that is in a <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-select-option-list">list of options</a> or that represents a 
 			  suggestion in a <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-datalist-element">datalist</a> 
-			  <td><code>role=option</code>, with <code>aria-selected=true</code> if the <code>selected</code> attribute is present, <code>
+			  <td><code>role=<a href="#index-aria-option">option</a></code>, with <code>aria-selected=true</code> if the <code>selected</code> attribute is present, <code>
 			  aria-selected=false</code> otherwise. </td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
@@ -707,7 +703,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-output-element">output</a>
 				</code>
-			  <td><code>role=status </code></td>
+			  <td>NONE</td>
 			  <td><p>Role: Any, use in conjunction with <code>aria-live=polite</code></p>
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  allowed roles</p></td>
@@ -726,9 +722,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-progress-element">progress</a> 
 				</code>
-			  <td><code>progressbar</code> role, with, if the progress bar is determinate, the <code>aria-valuemax</code> property set to the maximum 
-			  value of the progress bar, the aria-valuemin property set to zero, and the aria-valuenow property set to the current value of the progress 
-			  bar </td>
+			  <td>role=<a href="#index-aria-progressbar">progressbar</a></td>
 			  <td><p>.</p>
 	
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
@@ -742,23 +736,15 @@
 			</tr>
 			<tr>
 		   <td><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-section-element"><code>section</code></a>
-			  <td><code>role=region</code></td>
+			  <td><code>role=<a href="#index-aria-region">region</a></code></td>
 			  <td><p>Role: <code>alert,        alertdialog,        application,        contentinfo,        dialog,        document,        log,        
 			  marquee,                search, </code>or<code> status </code></p>
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  allowed roles</p></td>
 			</tr>
 			<tr>
-			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-select-element"><code>select</code></a> element with a <a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-select-multiple"><code>multiple</code></a> attribute </td>
-			  <td><code>role=listbox</code>, with <code>aria-multiselectable=true</code></td>
-			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
-			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
-			</tr>
-			<tr>
-			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-select-element"><code>select</code></a> element with no <a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-select-multiple"><code>multiple</code></a> attribute </td>
-			  <td><code>role=listbox</code>, with <code>aria-multiselectable=false</code></td>
+			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-select-element"><code>select</code></a></td>
+			  <td><code>role=<a href="#index-aria-listbox">listbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
 			</tr>
@@ -791,7 +777,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-summary-element">summary</a> 
 				</code>
-			  <td><a>NONE</a></td>
+			  <td><a>role=</a><a href="#index-aria-button">button</a></td>
 			  <td><p>Role: <code>button</code> with 
 			  <code>aria-expanded="true"</code> if the parent (<code>details</code>) element's <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#attr-details-open"><code>open</code></a> attribute is present, <code>
@@ -814,7 +800,7 @@
 			</tr>
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-textarea-element">textarea</a> </code>
-			  <td><code>role=textbox</code></td>
+			  <td><code>role=<a href="#index-aria-textbox">textbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 				<p><strong>Not</strong> <code>role=presentation</code></p></td>
 			</tr>
@@ -822,7 +808,7 @@
 			  <td><p><a href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#the-tbody-element"><code>tbody</code></a>, <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#the-thead-element"><code>thead</code></a>, 
 	  <a href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#the-tfoot-element"><code>tfoot</code></a></p></td>          
-			  <td><code>role=rowgroup</code></td>
+			  <td><code>role=<a href="#index-aria-rowgroup">rowgroup</a></code></td>
 			  <td><p>Role: any 
 	
 			  </p>
@@ -878,23 +864,11 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#the-th-element">th</a></code><a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-th-element"></a>      
-			  <td><a>NONE</a></td>
+			  <td><code>role=columnheader</code></td>
 			  <td><p>Role: any
 			  </p>
 			    <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  allowed roles</p></td>
-			</tr>
-			<tr>
-			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#the-th-element"><code>th</code></a> element that is a <span 
-			  data-anolis-xref="sorting-capable-th-element"><a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#sorting-capable-th-element">sorting-capable</a> <a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#the-th-element"><code>th</code></a> element</span> whose column key <a 
-			  data-anolis-xref="column key ordinality" href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#column-key-ordinality">
-			  ordinality</a> is 1          
-			  <td><code>role=columnheader</code>, with the <code>aria-sort</code> state set to "ascending" if the element's <span 
-			  data-anolis-xref="#column-sort-direction">column sort direction is <em>normal</em>, and "descending" otherwise. </span></td>
-			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
-				<p><strong>Not</strong> <code>role=presentation</code></p></td>
 			</tr>
 			<tr>
 			  <td><p><a href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#the-tr-element"><code>tr</code></a></p>
@@ -911,7 +885,7 @@
 			</tr>
 			<tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-ul-element"><code>ul</code></a>
-			  <td><code>role=list</code></td>
+			  <td><code>role=<a href="#index-aria-list">list</a></code></td>
 			  <td><p>Role: <code>directory, group, listbox, menu, menubar, tablist, toolbar, tree, presentation </code></p>
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  allowed roles</p></td>
@@ -947,7 +921,7 @@
 			<tr>
 			  <td>Element with a <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-readonly-attribute"><code>readonly</code></a> 
 			  attribute </td>
-			  <td><code>aria-readonly=true</code></td>
+			  <td><code>aria-readonly=&quot;true&quot;</code></td>
 			  <td><p>Use the <code>readonly</code> attribute on any element that is <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/index.html#attributes-1">allowed the <code>readonly</code> attribute</a> in HTML5. 
 			  </p>
@@ -957,7 +931,7 @@
 			<tr>
 			  <td>Element with a <a href="http://www.w3.org/html/wg/drafts/html/master/editing.html#the-hidden-attribute"><code>hidden</code></a> 
 			  attribute </td>
-			  <td><code>aria-hidden=true</code></td>
+			  <td><code>aria-hidden=&quot;true&quot;</code></td>
 			  <td>Use the <code>hidden</code> attribute in conjunction with the CSS <code>display:none </code>property</td>
 			</tr>
 			<tr>
@@ -978,7 +952,7 @@
 			  <td>Element that is a <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#candidate-for-constraint-validation">candidate for 
 			  constraint validation</a> but that does not <a data-anolis-xref="concept-fv-valid" 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-fv-valid">satisfy its constraints</a></td>
-			  <td><code>aria-invalid=true</code></td>
+			  <td><code>aria-invalid=&quot;true&quot;</code></td>
 			  <td><p>Only use the <code>aria-invalid=true</code> attribute after form has been validated, setting it prior means users think the field is 
 			  invalid before they even input data or interact with it.</p>
 	<p>(Editor's NOTE) Provide link to what HTML defines what constitutes the user has interacted with the control "significantly." ARIA defines <code>
@@ -1010,11 +984,7 @@
     <ul>
       <li><a href="http://rawgithub.com/w3c/aria-in-html/master/index.html">Using WAI-ARIA in HTML</a> -
       A practical guide for developers on how to to add accessibility information to HTML elements using
-      the Accessible Rich Internet Applications specification [[!wai-aria]].
-      In particular the
-      <a href="http://rawgithub.com/w3c/aria-in-html/master/index.html#recommendations-table">Recommendations Table</a>
-      provides a complete reference for authors as to which ARIA roles, states and properties
-      are appropriate to use on each HTML element.</li>
+      the Accessible Rich Internet Applications specification [[!wai-aria]].      </li>
 
       <li><a href="http://www.w3.org/WAI/PF/aria-practices/">WAI-ARIA 1.0 Authoring Practices</a> - An
       author's guide to understanding and implementing Accessible Rich Internet Applications.</li>
