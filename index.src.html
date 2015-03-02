@@ -165,7 +165,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-button-element">button</a> <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-button-type-menu-state">type="menu"</a></code>
-			  <td><code>role=<a href="#index-aria-button">button</a></code> with <code>aria-haspopup=true</code></td>
+			  <td><code>role=<a href="#index-aria-button">button</a></code></td>
 			  <td><p>Roles: <code><a href="#index-aria-link">link</a>, <a href="#index-aria-menuitem">menuitem</a>, <a 
 			  href="#index-aria-menuitemcheckbox">menuitemcheckbox</a>, <a href="#index-aria-menuitemradio">menuitemradio</a>, <a 
 			  href="#index-aria-radio">radio</a></code>. <br>
@@ -191,7 +191,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-datalist-element">datalist</a> 
 				</code>
-			  <td><code>role=<a href="#index-aria-listbox">listbox</a></code>, with  <code>aria-multiselectable=false</code></td>
+			  <td><code>role=<a href="#index-aria-listbox">listbox</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
 			  <code> listbox</code> role.
 	
@@ -273,8 +273,7 @@
 			<tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"><code>h1</code></a> to <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"><code>h6</code></a> element</td>
-			  <td><code>role=<a href="#aria-index-heading">heading</a></code>, with the <code>aria-level</code> = element's <a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#outline-depth">outline depth</a></td>
+			  <td><code>role=<a href="#aria-index-heading">heading</a></code>, with the <code>aria-level</code> = positive integer</td>
 			  <td><span><a href="#index-aria-global">global <code>aria-*</code> attributes</a> </span></td>
 			</tr>
 			<tr>
@@ -324,7 +323,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#the-img-element">img</a> with <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-alt">alt</a>=&quot;<em>some text</em>&quot;</code></td>
-			  <td><code>role=img</code></td>
+			  <td><code>role=<a href="#index-aria-img">img</a></code></td>
 			  <td><p>Role: Any</p>
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  allowed roles</p></td>
@@ -332,7 +331,7 @@
 			<tr>
 			  <td><code>input type= </code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#button-state-(type=button)"><code>button
 			  </code></a></td>
-			  <td><code>role=button</code></td>
+			  <td><code>role=<a href="#index-aria-button">button</a></code></td>
 			  <td><p>Role: <code> link, menuitem, menuitemcheckbox, menuitemradio, radio </code></p>
 				<p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 				allowed roles				</p>
@@ -403,16 +402,7 @@
 			</tr>
 			<tr>
 			  <td><code>input type = <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#number-state-(type=number)">number</a></code></td>
-			  <td><code>role=spinbutton</code>, with the aria-readonly property set to "true" if the element has a <a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-input-readonly"><code>readonly</code></a> attribute, the <code>
-			  aria-valuemax</code> property set to the element's <a data-anolis-xref="concept-input-max" 
-			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-input-max">maximum</a>, the <code>aria-valuemin</code> property set 
-			  to the element's <a data-anolis-xref="concept-input-min" href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-input-min">
-			  minimum</a>, and, if the result of applying the <a 
-			  href="http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#rules-for-parsing-floating-point-number-values">rules for parsing 
-			  floating-point number values</a> to the element's <a data-anolis-xref="concept-fe-value" 
-			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-fe-value">value</a> is a number, with the <code>aria-valuenow</code> 
-			  property set to that number </td>
+			  <td><code>role=<a href="#index-aria-spinbutton">spinbutton</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  <code>spinbutton</code> role.
 	
@@ -438,10 +428,7 @@
 			<tr>
 			  <td><code>input type = <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#range-state-(type=range)" 
 			  title="attr-input-type-range">range</a></code></td>
-			  <td><code>role=<a href="#index-aria-slider">slider</a></code> with <code>aria-valuemax</code> property set to the element's <a data-anolis-xref="concept-input-max" 
-			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-input-max">maximum</a>, and the <code>aria-valuemin</code> property 
-			  set to the element's <a data-anolis-xref="concept-input-min" 
-			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-input-min">minimum</a>.</td>
+			  <td><code>role=<a href="#index-aria-slider">slider</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
 			  <code> slider </code>role.
 				</p>
@@ -656,7 +643,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-meter-element">meter</a> 
 				</code>
-			  <td>role=<a href="#index-aria-progressbar">progressbar</a></td>
+			  <td><code>role=<a href="#index-aria-progressbar">progressbar</a></code></td>
 			  <td><a href="#index-aria-global">global <code>aria-*</code> attributes</a></td>
 			</tr>
 			<tr>
@@ -695,8 +682,7 @@
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-option-element">option</a> element that is in a <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/forms.html#concept-select-option-list">list of options</a> or that represents a 
 			  suggestion in a <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-datalist-element">datalist</a> 
-			  <td><code>role=<a href="#index-aria-option">option</a></code>, with <code>aria-selected=true</code> if the <code>selected</code> attribute is present, <code>
-			  aria-selected=false</code> otherwise. </td>
+			  <td><code>role=<a href="#index-aria-option">option</a></code></td>
 			  <td><p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p>
 			  <p><strong>Not</strong> <code>role=presentation</code></p></td>
 			</tr>
@@ -722,7 +708,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-progress-element">progress</a> 
 				</code>
-			  <td>role=<a href="#index-aria-progressbar">progressbar</a></td>
+			  <td><code>role=<a href="#index-aria-progressbar">progressbar</a></code></td>
 			  <td><p>.</p>
 	
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the
@@ -864,7 +850,7 @@
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/tabular-data.html#the-th-element">th</a></code><a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-th-element"></a>      
-			  <td><code>role=columnheader</code></td>
+			  <td><code>role=<a href="#index-aria-columnheader">columnheader</a></code></td>
 			  <td><p>Role: any
 			  </p>
 			    <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
