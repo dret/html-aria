@@ -14,18 +14,23 @@
           editors: [
                 {   name:       "Steve Faulkner",
                     url:        "http://www.paciellogroup.com",
-                    company:    "W3C",
-                    companyURL: "http://w3c.org/" }
+                    company:    "The Paciello Group",
+                    companyURL: "http://www.paciellogroup.com" }
           ],
       };
     </script>
      <style>
 	.note-title {padding-left:1.5em}
+	
+tr:nth-child(2n+1) {
+    background-color: #ebebeb;
+}
+
 	</style>
    </head>
 <body>
 	
-<section id='abstract'>This specification defines the web developer  rules (author conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML5]] elements. It also defines requirements for Conformance Checking tools.
+<section id='abstract'>This specification defines the web developer  rules (author conformance requirements) for the use of [[!wai-aria]] attributes on [[!HTML51]] elements. It also defines requirements for Conformance Checking tools.
 </section>
 <p class="advisement">This is a draft document and its contents are subject to change without notice.</p>	
 
@@ -897,7 +902,7 @@
 			<tr>
 			  <td>Element with a <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#attr-input-required"><code>required</code></a> 
 			  attribute</td>
-			  <td>The <code>aria-required=&quot;true&quot;</code></td>
+			  <td><code>aria-required=&quot;true&quot;</code></td>
 			  <td><p>Use the <code>aria-required</code> attribute on any element that is <a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/index.html#attributes-1">allowed the <code>required</code> attribute</a> in HTML5. 
 			  </p>
@@ -947,7 +952,7 @@
 			</tr>
 </table>
           
-          <p>The listed elements with default ARIA semantics of <dfn>NONE</dfn> do not have any default ARIA semantics, but they do have meaning and this meaning may be represented in roles, states and properties not provided by ARIA, but present in accessibility APIs. It is therefore recommended that authors should add a role attribute to a semantically neutral element such as a <code>div</code> or <code>span</code>, rather than overriding the semantics of the listed elements. </p>
+          <p>The listed elements with default ARIA semantics of <dfn>NONE</dfn> do not have any default ARIA semantics, but they do have meaning and this meaning may be represented in roles, states and properties not provided by ARIA, but present in accessibility APIs. It is therefore recommended that authors SHOULD add a role attribute to a semantically neutral element such as a <code>div</code> or <code>span</code>, rather than overriding the semantics of the listed elements. </p>
 
 	
 		
