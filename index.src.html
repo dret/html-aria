@@ -26,6 +26,28 @@ tr:nth-child(2n+1) {
     background-color: #ebebeb;
 }
 
+summary {
+    background: url("../img/rightArrow.png") no-repeat scroll 0.5em center #fff;
+    padding: 0.25em 0.25em 0.25em 2em;
+}
+
+details, summary {
+    display: block;
+}
+
+p.note::before {
+    content: "Note: ";
+    font-weight: bolder;
+}
+p.note, div.note {
+    padding: 0.5em 2em;
+}
+.note {
+    background: none repeat scroll 0 0 #e9fbe9;
+    border-color: #52e052;
+    border-left: 0.25em solid #52e052;
+}
+
 	</style>
    </head>
 <body>
