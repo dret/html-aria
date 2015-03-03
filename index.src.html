@@ -27,10 +27,13 @@ tr:nth-child(2n+1) {
 }
 
 summary {
-    background: url("../img/rightArrow.png") no-repeat scroll 0.5em center #fff;
+    background: url("https://specs.webplatform.org/assets/css/../img/rightArrow.png") no-repeat scroll 0.5em center #fff;
     padding: 0.25em 0.25em 0.25em 2em;
 }
 
+summary:hover, summary:focus, details[open] summary:hover, details[open] summary:focus {
+    background-color: #eee;
+}
 details, summary {
     display: block;
 }
@@ -48,6 +51,18 @@ p.note, div.note {
     border-left: 0.25em solid #52e052;
 }
 
+
+.example {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border-color: #c0c0c0;
+    border-left: 0.25em solid #c0c0c0;
+    color: #222222;
+    display: block;
+    margin-left: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+}
+
 	</style>
    </head>
 <body>
@@ -62,9 +77,11 @@ p.note, div.note {
 	  <p>Web developers MUST NOT use the ARIA <code>role</code> and <code>aria-*</code> attributes in a manner that conflicts with the semantics described in the <a href="#docconformance">Document conformance requirements for use of ARIA attributes in HTML</a> table. Web developers SHOULD NOT set the ARIA <code>role</code> and <code>aria-*</code> attributes to values that match the default implicit ARIA semantics defined in the table.</p>
 	  <div class="example">
       The following uses a <code>role=heading</code> on a <code>button</code> element. This is not allowed, because the <code>button</code> element has default characteristics that conflict with the heading role.
+      
       <pre>
-       &lt;button role=&quot;heading&quot;&gt;search&lt;/button&gt;
+      &lt;button role=&quot;heading&quot;&gt;search&lt;/button&gt;
       </pre>
+     
      <details><summary>Example document for conformance checking</summary>
      <p>If you <a href="http://validator.w3.org/nu/?doc=https%3A%2F%2Fspecs.webplatform.org%2Fhtml-aria%2Fwebspecs%2Fmaster%2Fexamples%2Fnonconforming1.html" target="_blank">check this file</a> using a HTML5 <a href="http://validator.w3.org/nu/">conformance checker</a> an error will be displayed.</p>
      <p><a href="https://specs.webplatform.org/html-aria/webspecs/master/examples/nonconforming1.html">non conforming ARIA use example</a>:</p>
