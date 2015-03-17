@@ -73,7 +73,7 @@ p.note, div.note {
 
 <section><h2 id="rules-wd">Web developer requirements for use of ARIA in HTML</h2>
 
-	  <p>Web developers MAY use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a href="http://www.w3.org/TR/html/index.html#elements-1">HTML elements</a>, in accordance with the requirements described in [[!wai-aria-1.1]], except where these conflict with the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#strong-native-semantics">strong native semantics</a></dfn> or are equal to the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#default-implicit-aria-semantics">default implicit ARIA semantics</a></dfn> of a given HTML element. These constraints, are intended to prevent developers from making assistive technology products report nonsensical user interface information (UI) that does not represent the actual UI of the document. </p>
+	  <p>Web developers MAY use the ARIA <code>role</code> and <code>aria-*</code> attributes on <a href="http://www.w3.org/TR/html/index.html#elements-1">HTML elements</a>, in accordance with the requirements described in [[wai-aria-1.1]], except where these conflict with the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#strong-native-semantics">strong native semantics</a></dfn> or are equal to the <dfn><a href="http://www.w3.org/TR/html/infrastructure.html#default-implicit-aria-semantics">default implicit ARIA semantics</a></dfn> of a given HTML element. These constraints, are intended to prevent developers from making assistive technology products report nonsensical user interface information (UI) that does not represent the actual UI of the document. </p>
 	  <p>Web developers MUST NOT use the ARIA <code>role</code> and <code>aria-*</code> attributes in a manner that conflicts with the semantics described in the <a href="#docconformance">Document conformance requirements for use of ARIA attributes in HTML</a> table. Web developers SHOULD NOT set the ARIA <code>role</code> and <code>aria-*</code> attributes to values that match the default implicit ARIA semantics defined in the table.</p>
 	  <div class="example">
       The following uses a <code>role=heading</code> on a <code>button</code> element. This is not allowed, because the <code>button</code> element has default characteristics that conflict with the heading role.
@@ -97,10 +97,7 @@ p.note, div.note {
 	  language feature (element or attribute) in a cell in the first column implies the ARIA semantics
 (any role, states, and properties) given in the cell in the second column of the same row. </p>
 	
-	
-	  <p>Documents MUST NOT use any <code data-x="attr-aria-role">role</code> values with elements 
-	  in the following table other than the corresponding role value (if any) as listed for that element in the third column,	  other than those indicated in the second column, which SHOULD NOT be used.</p>
-	  
+	 
 	 <p class="note" id="aria-usage-note">Setting an ARIA <code>role</code> and/or <code>aria-*</code> attribute that matches the <span>default implicit ARIA semantics</span> is unnecessary and is NOT RECOMMENDED as these properties are already set by the browser.</p>
 	</section>
      </section>
@@ -1012,488 +1009,488 @@ p.note, div.note {
 	<td>none</td>
 	<td>
 	<ul>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-atomic">aria-atomic</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-busy">aria-busy (state)</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-controls">aria-controls</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-describedby">aria-describedby</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-disabled">aria-disabled (state)</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-dropeffect">aria-dropeffect</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-flowto">aria-flowto</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-grabbed">aria-grabbed (state)</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-haspopup">aria-haspopup</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-hidden">aria-hidden (state)</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-invalid">aria-invalid (state)</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-label">aria-label</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-labelledby">aria-labelledby</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-live">aria-live</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-owns">aria-owns</a></code></li>
-	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-relevant">aria-relevant</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-atomic">aria-atomic</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-busy">aria-busy (state)</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-controls">aria-controls</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-describedby">aria-describedby</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-disabled">aria-disabled (state)</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect">aria-dropeffect</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-flowto">aria-flowto</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-grabbed">aria-grabbed (state)</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup">aria-haspopup</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-hidden">aria-hidden (state)</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-invalid">aria-invalid (state)</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-label">aria-label</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-labelledby">aria-labelledby</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-live">aria-live</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-owns">aria-owns</a></code></li>
+	<li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-relevant">aria-relevant</a></code></li>
 	</ul>
-	<tr><td tabindex="-1" id="index-aria-alert"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#alert">alert</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-alert"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#alert">alert</a></code></td>
 	<td>A message with important, and usually time-sensitive, information. See related <code>alertdialog</code> and <code>status</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-alertdialog"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#alertdialog">alertdialog</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-alertdialog"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#alertdialog">alertdialog</a></code></td>
 	  <td>A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related <code>alert</code> 
 	  <code>dialog</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-application"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#application">application</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-application"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#application">application</a></code></td>
 	<td>A region declared as a web application, as opposed to a web document.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-article"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#article">article</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-article"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#article">article</a></code></td>
 	<td>A section of a page that consists of a composition that forms an independent part of a document, page, or site.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-banner"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#banner">banner</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-banner"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#banner">banner</a></code></td>
 	<td>A region that contains mostly site-oriented content, rather than page-specific content.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-button"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#button">button</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-button"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#button">button</a></code></td>
 	<td>An input that allows for user-triggered actions when clicked or pressed. See related <code>link</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-pressed">aria-pressed (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-pressed">aria-pressed (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-checkbox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#checkbox">checkbox</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-checkbox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#checkbox">checkbox</a></code></td>
 	<td>A checkable input that has three possible values: true, false, or mixed.</td>
 	<td><ul>
-	 <li><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-checked"><code>aria-checked (state)</code></a></li>
+	 <li><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-checked"><code>aria-checked (state)</code></a></li>
 	</ul></td>
 	<td><code></code></td></tr>
-	<tr><td tabindex="-1" id="index-aria-columnheader"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#columnheader">columnheader</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-columnheader"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#columnheader">columnheader</a></code></td>
 	<td>A cell containing header information for a column.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-sort">aria-sort</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-readonly">aria-readonly</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-sort">aria-sort</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-readonly">aria-readonly</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-combobox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#combobox">combobox</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-combobox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#combobox">combobox</a></code></td>
 	<td>A presentation of a select; usually similar to a textbox where users can type ahead to select an option, or type to enter arbitrary text as a new    item in the list. See related <code>listbox</code>.</td>
 	<td><ul>
-	 <li><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded"><code>aria-expanded (state)</code></a></li>
+	 <li><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded"><code>aria-expanded (state)</code></a></li>
 	</ul></td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-autocomplete">aria-autocomplete</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete">aria-autocomplete</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-complementary"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#complementary">complementary</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-complementary"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#complementary">complementary</a></code></td>
 	<td>A supporting section of the document, designed to be complementary to the main content at a similar level in the DOM hierarchy, but remains 
 	meaningful when separated from the main content.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-contentinfo"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#contentinfo">contentinfo</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-contentinfo"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#contentinfo">contentinfo</a></code></td>
 	<td>A large perceivable region that contains information about the parent document.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-definition"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#definition">definition</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-definition"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#definition">definition</a></code></td>
 	<td>A definition of a term or concept.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-dialog"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#dialog">dialog</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-dialog"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#dialog">dialog</a></code></td>
 	<td>A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter 
 	information or require a response. See related <code>alertdialog</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-directory"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#directory">directory</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-directory"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#directory">directory</a></code></td>
 	<td>A list of references to members of a group, such as a static table of contents.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-document"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#document">document</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-document"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#document">document</a></code></td>
 	<td>A region containing related information that is declared as document content, as opposed to a web application.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-form"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#form">form</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-form"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#form">form</a></code></td>
 	<td>A landmark region that contains a collection of items and objects that, as a whole, combine to create a form. See related <code>search</code>.
 	</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-grid"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#grid">grid</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-grid"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#grid">grid</a></code></td>
 	<td>A grid is an interactive control which contains cells of tabular data arranged in rows and columns, like a table.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-level">aria-level</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-multiselectable">aria-multiselectable</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-readonly">aria-readonly</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-level">aria-level</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable">aria-multiselectable</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-readonly">aria-readonly</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-gridcell"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#gridcell">gridcell</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-gridcell"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#gridcell">gridcell</a></code></td>
 	<td>A cell in a grid or treegrid.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-readonly">aria-readonly</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-readonly">aria-readonly</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-group"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#group">group</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-group"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#group">group</a></code></td>
 	<td>A set of user interface objects which are not intended to be included in a page summary or table of contents by assistive technologies.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-heading"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#heading">heading</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-heading"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#heading">heading</a></code></td>
 	<td>A heading for a section of the page.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-level">aria-level</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-level">aria-level</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-img"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#img">img</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-img"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#img">img</a></code></td>
 	<td>A container for a collection of elements that form an image.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-link"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#link">link</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-link"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#link">link</a></code></td>
 	<td>An interactive reference to an internal or external resource that, when activated, causes the user agent to navigate to that resource. See 
 	related <code>button</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-list"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#list">list</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-list"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#list">list</a></code></td>
 	<td>A group of non-interactive list items. See related <code>listbox</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-listbox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#listbox">listbox</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-listbox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#listbox">listbox</a></code></td>
 	<td>A widget that allows the user to select one or more items from a list of choices. See related <code>combobox</code> and <code>list</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-multiselectable">aria-multiselectable</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable">aria-multiselectable</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-listitem"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#listitem">listitem</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-listitem"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#listitem">listitem</a></code></td>
 	<td>A single item in a <code>list</code> or <code>directory</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-level">aria-level</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-posinset">aria-posinset</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-setsize">aria-setsize</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-level">aria-level</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-posinset">aria-posinset</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-setsize">aria-setsize</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-log"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#log">log</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-log"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#log">log</a></code></td>
 	<td>A type of live region where new information is added in meaningful order and old information may disappear. See related <code>marquee</code>.
 	</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-main"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#main">main</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-main"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#main">main</a></code></td>
 	<td>The main content of a document.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-marquee"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#marquee">marquee</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-marquee"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#marquee">marquee</a></code></td>
 	<td>A type of live region where non-essential information changes frequently. See related <code>log</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-math"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#math">math</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-math"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#math">math</a></code></td>
 	<td>Content that represents a mathematical expression. </td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-menu"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#menu">menu</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-menu"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#menu">menu</a></code></td>
 	<td>A type of widget that offers a list of choices to the user.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-menubar"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#menubar">menubar</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-menubar"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#menubar">menubar</a></code></td>
 	<td>A presentation of menu that usually remains visible and is usually presented horizontally.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-menuitem"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#menuitem">menuitem</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-menuitem"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#menuitem">menuitem</a></code></td>
 	<td>An option in a group of choices contained by a <code>menu</code> or <code>menubar</code>.</td>
 	<td>none</td>
 	<td><code></code></td></tr>
-	<tr><td tabindex="-1" id="index-aria-menuitemcheckbox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#menuitemcheckbox">menuitemcheckbox</a>
+	<tr><td tabindex="-1" id="index-aria-menuitemcheckbox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#menuitemcheckbox">menuitemcheckbox</a>
 	</code></td>
 	<td>A checkable menuitem that has three possible values: true, false, or mixed.</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-checked">aria-checked (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-checked">aria-checked (state)</a></code></li>
 	</ul></td>
 	<td><code></code></td></tr>
-	<tr><td tabindex="-1" id="index-aria-menuitemradio"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#menuitemradio">menuitemradio</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-menuitemradio"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#menuitemradio">menuitemradio</a></code></td>
 	<td>A checkable menuitem in a group of <code>menuitemradio</code> roles, only one of which can be checked at a time.</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-checked">aria-checked (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-checked">aria-checked (state)</a></code></li>
 	</ul></td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-posinset">aria-posinset</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-setsize">aria-setsize</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-posinset">aria-posinset</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-setsize">aria-setsize</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-navigation"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#navigation">navigation</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-navigation"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#navigation">navigation</a></code></td>
 	<td>A collection of navigational elements (usually links) for navigating the document or related documents.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-note"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#note">note</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-note"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#note">note</a></code></td>
 	<td>A section whose content is parenthetic or ancillary to the main content of the resource.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-option"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#option">option</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-option"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#option">option</a></code></td>
 	<td>A selectable item in a select list.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-checked">aria-checked (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-posinset">aria-posinset</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-setsize">aria-setsize</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-checked">aria-checked (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-posinset">aria-posinset</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-setsize">aria-setsize</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-presentation"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#presentation">presentation</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-presentation"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#presentation">presentation</a></code></td>
 	<td>An element whose implicit native role semantics will not be mapped to the accessibility API.</td>
 	<td>none</td>
 	<td><code></code></td></tr>
-	<tr><td tabindex="-1" id="index-aria-progressbar"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#progressbar">progressbar</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-progressbar"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#progressbar">progressbar</a></code></td>
 	<td>An element that displays the progress status for tasks that take a long time.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuemax">aria-valuemax</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuemin">aria-valuemin</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuenow">aria-valuenow</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuetext">aria-valuetext</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuemax">aria-valuemax</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuemin">aria-valuemin</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuenow">aria-valuenow</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuetext">aria-valuetext</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-radio"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#radio">radio</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-radio"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#radio">radio</a></code></td>
 	<td>A checkable input in a group of radio roles, only one of which can be checked at a time.</td>
 	<td><ul>
-	 <li><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-checked"><code>aria-checked (state)</code></a></li>
+	 <li><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-checked"><code>aria-checked (state)</code></a></li>
 	</ul></td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-posinset">aria-posinset</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-setsize">aria-setsize</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-posinset">aria-posinset</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-setsize">aria-setsize</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-radiogroup"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#radiogroup">radiogroup</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-radiogroup"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#radiogroup">radiogroup</a></code></td>
 	<td>A group of radio buttons.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-region"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#region">region</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-region"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#region">region</a></code></td>
 	<td>A large perceivable section of a web page or document, that the author feels is important enough to be included in a page summary or table of 
 	contents, for example, an area of the page containing live sporting event statistics.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-row"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#row">row</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-row"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#row">row</a></code></td>
 	<td>A row of cells in a grid.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-level">aria-level</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-level">aria-level</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-rowgroup"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#rowgroup">rowgroup</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-rowgroup"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#rowgroup">rowgroup</a></code></td>
 	<td>A group containing one or more row elements in a grid.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-rowheader"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#rowheader">rowheader</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-rowheader"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#rowheader">rowheader</a></code></td>
 	<td>A cell containing header information for a row in a grid.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-sort">aria-sort</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-readonly">aria-readonly</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-sort">aria-sort</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-readonly">aria-readonly</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-scrollbar"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#scrollbar">scrollbar</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-scrollbar"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#scrollbar">scrollbar</a></code></td>
 	<td>A graphical object that controls the scrolling of content within a viewing area, regardless of whether the content is fully displayed within the 
 	viewing area.</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-controls">aria-controls</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-orientation">aria-orientation</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuemax">aria-valuemax</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuemin">aria-valuemin</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuenow">aria-valuenow</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-controls">aria-controls</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-orientation">aria-orientation</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuemax">aria-valuemax</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuemin">aria-valuemin</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuenow">aria-valuenow</a></code></li>
 	</ul></td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-search"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#search">search</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-search"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#search">search</a></code></td>
 	<td>A landmark region that contains a collection of items and objects that, as a whole, combine to create a search facility. See related <code>form
 	</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-orientation">aria-orientation</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-orientation">aria-orientation</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-separator"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#separator">separator</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-separator"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#separator">separator</a></code></td>
 	<td>A divider that separates and distinguishes sections of content or groups of menuitems.</td>
 	<td><ul>
 	 <li>none</li>
 	</ul></td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuetext">aria-valuetext</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuetext">aria-valuetext</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-slider"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#slider">slider</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-slider"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#slider">slider</a></code></td>
 	<td>A user input where the user selects a value from within a given range.</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuemax">aria-valuemax</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuemin">aria-valuemin</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuenow">aria-valuenow</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuemax">aria-valuemax</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuemin">aria-valuemin</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuenow">aria-valuenow</a></code></li>
 	</ul></td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-orientation">aria-orientation</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuetext">aria-valuetext</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-orientation">aria-orientation</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuetext">aria-valuetext</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-spinbutton"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#spinbutton">spinbutton</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-spinbutton"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#spinbutton">spinbutton</a></code></td>
 	<td>A form of range that expects the user to select from among discrete choices.</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuemax">aria-valuemax</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuemin">aria-valuemin</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuenow">aria-valuenow</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuemax">aria-valuemax</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuemin">aria-valuemin</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuenow">aria-valuenow</a></code></li>
 	</ul></td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-valuetext">aria-valuetext</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-valuetext">aria-valuetext</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-status"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#status">status</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-status"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#status">status</a></code></td>
 	<td>A container whose content is advisory information for the user but is not important enough to justify an alert, often but not necessarily 
 	presented as a status bar. See related <code>alert</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-tab"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#tab">tab</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-tab"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#tab">tab</a></code></td>
 	<td>A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-tablist"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#tablist">tablist</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-tablist"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#tablist">tablist</a></code></td>
 	<td>A list of tab elements, which are references to tabpanel elements.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-level">aria-level</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-level">aria-level</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-tabpanel"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#tabpanel">tabpanel</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-tabpanel"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#tabpanel">tabpanel</a></code></td>
 	<td>A container for the resources associated with a <code>tab</code>, where each <code>tab</code> is contained in a <code>tablist</code>.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-textbox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#textbox">textbox</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-textbox"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#textbox">textbox</a></code></td>
 	<td>Input that allows free-form text as its value.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-autocomplete">aria-autocomplete</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-multiline">aria-multiline</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-readonly">aria-readonly</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete">aria-autocomplete</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-multiline">aria-multiline</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-readonly">aria-readonly</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-timer"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#timer">timer</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-timer"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#timer">timer</a></code></td>
 	<td>A type of live region containing a numerical counter which indicates an amount of elapsed time from a start point, or the time remaining until an end point.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-toolbar"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#toolbar">toolbar</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-toolbar"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#toolbar">toolbar</a></code></td>
 	<td>A collection of commonly used function buttons represented in compact visual form.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-tooltip"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#tooltip">tooltip</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-tooltip"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#tooltip">tooltip</a></code></td>
 	<td>A contextual popup that displays a description for an element.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-tree"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#tree">tree</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-tree"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#tree">tree</a></code></td>
 	<td>A type of list that may contain sub-level nested groups that can be collapsed and expanded.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-multiselectable">aria-multiselectable</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable">aria-multiselectable</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-treegrid"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#treegrid">treegrid</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-treegrid"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#treegrid">treegrid</a></code></td>
 	<td>A grid whose rows can be expanded and collapsed in the same manner as for a tree.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-level">aria-level</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-multiselectable">aria-multiselectable</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-readonly">aria-readonly</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-activedescendant">aria-activedescendant</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-required">aria-required</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-level">aria-level</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable">aria-multiselectable</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-readonly">aria-readonly</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">aria-activedescendant</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-required">aria-required</a></code></li>
 	</ul></td></tr>
-	<tr><td tabindex="-1" id="index-aria-treeitem"><code><a href="http://www.w3.org/TR/wai-aria-1.1/roles#treeitem">treeitem</a></code></td>
+	<tr><td tabindex="-1" id="index-aria-treeitem"><code><a href="http://www.w3.org/TR/wai-aria-1.1/#treeitem">treeitem</a></code></td>
 	<td>An option item of a tree. This is an element within a tree that may be expanded or collapsed if it contains a sub-level group of treeitems.</td>
 	<td>none</td>
 	<td><ul>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-level">aria-level</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-posinset">aria-posinset</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-setsize">aria-setsize</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-expanded">aria-expanded (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-checked">aria-checked (state)</a></code></li>
-	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/states_and_properties#aria-selected">aria-selected (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-level">aria-level</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-posinset">aria-posinset</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-setsize">aria-setsize</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-checked">aria-checked (state)</a></code></li>
+	 <li><code><a href="http://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected (state)</a></code></li>
 	</ul></td></tr>
 	</tbody>
 	</table>
@@ -1503,6 +1500,8 @@ p.note, div.note {
 	<section><div class="impl">
 	  <h3 id="checker-implementers">Conformance Checker implementers</h3>
 	  <p>Conformance checkers that claim support for checking of ARIA in HTML, MUST implement checks for the document conformance requirements for use of the ARIA <code>role</code> and <code>aria-*</code> attributes on HTML elements as defined in this specification.</p>
+	<p>Documents MUST NOT use any <code data-x="attr-aria-role">role</code> values with elements 
+	  in the <a href="#docconformance">Document conformance requirements for use of ARIA attributes in HTML</a> table, other than the corresponding role value (if any) as listed for that element in the third column,	  other than those indicated in the second column, which SHOULD NOT be used.</p>
 	
 	  <p>Conformance checkers are encouraged to phrase errors such that developers are encouraged to use
 	  more appropriate elements rather than remove accessibility information. For example, if an
