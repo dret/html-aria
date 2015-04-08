@@ -152,15 +152,15 @@ p.note, div.note {
 			<TR id="article" tabindex="-1">
 			  <TD><code><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-article-element">article</a></code></TD>
 			  <TD><code>role=<a href="#index-aria-article">article</a></code></TD>
-			  <TD><p>Roles: <code>presentation, document, application, or main</code>.<br>
+			  <TD><p>Roles: <code>presentation, document, application, main or region</code>.<br>
 			  <a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the allowed             roles</p>
 			  </TD>
 			</TR>
 			<TR id="aside" tabindex="-1">
 			  <TD><code><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-aside-element">aside</a> </code></td>
 			  <TD><code>role=<a href="#index-aria-complementary">complementary</a></code></TD>
-		      <TD><p>Roles:<code> <a href="#index-aria-note">note</a></code> or <a 
-			  href="#index-aria-search"><code>search</code></a>. </p>
+		      <TD><p>Roles:<code> <a href="#index-aria-note">note</a>, <a href="#index-aria-region">region</a></code> or <a 
+			  href="#index-aria-search"><code>search</code></a>.</p>
 				<p>
 				  <a href="#index-aria-global">global <code>aria-*</code> attributes</a>
 			  and any <code>aria-*</code> attributes applicable to the allowed             roles</p></TD>
@@ -586,7 +586,7 @@ p.note, div.note {
 			</tr>
 			<tr>
 			  <td><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#mathml"><code>math</code></a></td>
-			  <td><a>NONE</a></td>
+			  <td><a><code>role=<a href="#index-aria-math">math</a></code></a></td>
 			  <td><p><strong class="nosupport">No <code>role</code></strong></p>
                 <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a></p></td>
 			</tr>
@@ -707,7 +707,7 @@ p.note, div.note {
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-output-element">output</a>
 				</code>
-			  <td><a>NONE</a></td>
+			  <td><a><code>role=<a href="#index-aria-status">status</a></code></a></td>
 			  <td><p><strong>Any</strong> <code>role</code></p>
 			  <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
 			  allowed roles</p></td>
@@ -865,7 +865,7 @@ p.note, div.note {
 			<tr>
 			  <td><code><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-th-element">th</a></code><a 
 			  href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-th-element"></a>      
-			  <td><code>role=<a href="#index-aria-columnheader">columnheader</a></code></td>
+			  <td><code>role=<a href="#index-aria-columnheader">columnheader</a></code> or <code><a href="#index-aria-rowheader">rowheader</a></code></td>
 			  <td><p>Role: any
 			  </p>
 			    <p><a href="#index-aria-global">global <code>aria-*</code> attributes</a> and any <code>aria-*</code> attributes applicable to the 
